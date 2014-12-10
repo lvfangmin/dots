@@ -229,5 +229,7 @@ set nobackup
 set nowritebackup
 
 map ; :
-
 set pastetoggle=<F2>
+
+map <LocalLeader>r :MRU<cr>
+map <Space> <c-f>
