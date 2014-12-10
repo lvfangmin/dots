@@ -79,37 +79,6 @@ let NERDChristmasTree=1
 let NERDTreeWinSize=40 
 nmap <silent> <leader>tt :NERDTreeToggle<cr>
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"
-" Program Configure
-"
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"auto insert header message
-autocmd BufNewFile *.cpp,*.[ch],*.sh,*.java,*.php exec ":call SetTitle()"
-func SetTitle()
-	if &filetype == 'c' || &filetype == 'cpp' || &filetype == 'php' || filetype == 'java'
-		call setline(1, "/******************************************************************")
-		call append(line("."), " * File Name: ".expand("%"))
-		call append(line(".")+1, " * Author: Fangmin Lv")
-		call append(line(".")+2, " * mail: lvfm@yahoo-inc.com")
-		call append(line(".")+3, " * Create Time: ".strftime("%c"))
-		call append(line(".")+4, " ******************************************************************/")
-		call append(line(".")+5, "")
-	endif
-	
-	if &filetype == 'c'
-		call append(line(".")+6, "#include <stdio.h>")
-		call append(line(".")+7, "")
-	elseif &filetype == 'cpp'
-		call append(line(".")+6, "#include <iostream>")
-		call append(line(".")+7, "using namespace std;")
-		call append(line(".")+8, "")			
-	endif
-	"auto go to the end of the file
-	"not work!!!!!
-	autocmd BufNewFile * normal G
-endfunc
-
 " Settings for taglist.vim
 let Tlist_Use_Right_Window=1
 let Tlist_Auto_Open=0
