@@ -70,7 +70,7 @@ set cursorline
 set wildmenu
 
 "set \ between windows
-set fillchars=vert:\ ,stl:\ ,stlnc:\
+set fillchars=vert:|
 
 """"""""""""""""""""""""""""""
 " NERDTree setting
@@ -106,9 +106,6 @@ autocmd Filetype java set completefunc=javacomplete#CompeleteParamsInf
 inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P> 
 inoremap <buffer> <C-S-Space> <C-X><C-U><C-P>
 "autocmd Filetype java,javascript,jsp inoremap <buffer> . .<C-X><C-O><C-P>
-
-" map keys
-imap ;so System.out.println();<left><left>
 
 " press enter to select auto complete
 inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
@@ -147,15 +144,8 @@ set backup
 "  set backup to dedicated dir, not current dir
 set backupdir=~/.backup
 set viminfo=%100,'100,/100,h,\"500,:100,n~/.viminfo
-set history=200
-"set viminfo='100,f1
-
-" ---------------------------------------------------------------------------
-" spelling...
-if v:version >= 700
-	setlocal spell spelllang=en
-	nmap <LocalLeader>ss :set spell!<CR>
-endif
+set history=1000
+set viminfo='100,f1
 
 " toggle off help
 let NERDTreeMinimalUI=0
@@ -188,10 +178,10 @@ set t_Co=256
 let g:Powerline_symbols = 'fancy'
 
 " map c-h to c-w h
-map <c-h> <c-w>h<c-w>
-map <c-l> <c-w>l<c-w>
-map <c-j> <c-w>j<c-w>
-map <c-k> <c-w>k<c-w>
+map <C-h> <C-w>h
+map <C-l> <C-w>l
+map <C-j> <C-w>j
+map <C-k> <C-w>k
 
 " no back up file
 set nobackup
@@ -203,7 +193,51 @@ set pastetoggle=<F2>
 map <LocalLeader>r :MRU<cr>
 map <Space> <c-f>
 
-syntax enable
-set background=light
+"syntax enable
+"set background=light
 "colorscheme solarized
 let g:solarized_termcolors=256
+
+set visualbell
+set wildignore=*.o,*.obj,.git,*.jar,*.class
+set title
+set noswapfile
+set suffixes=.bak,~,.o,.h,.info,.swp,.obj,.class
+
+set statusline=%f\ %y\ %([%R%M]%)%#StatusLineNC#%{&ff=='unix'?'':&ff.'\ format'}%*%{'$'[!&list]}%{'~'[&pm=='']}%=#%n\ %l/%L,%c%V\ 
+set softtabstop=4
+set smartcase
+set listchars=tab:▸▸,trail:<,extends:>,precedes:<,nbsp:%
+set fileencodings=ucs-bom,utf-8,default,latin1
+set expandtab
+set dictionary=/usr/share/dict/words
+set completeopt=menu
+set backspace=2
+
+nnoremap <silent> <LocalLeader>sf :CommandT<cr>
+nnoremap <silent> <LocalLeader>E :e! ~/.vimrc<cr>
+vnoremap <LocalLeader>y "+y"
+nnoremap <LocalLeader>g :Ack<cr>
+map <silent> <LocalLeader>vs :call conque_term#open('bash', ['belowright split', 'resize 8'])<cr>
+map <silent> <LocalLeader>vv :call conque_term#open('bash', ['belowright vsplit'])<cr>
+nnoremap <LocalLeader>vh :help<cr>
+
+nnoremap <silent> <LocalLeader>h :JavaHierarchy<cr>
+nnoremap <silent> <LocalLeader>v :Validate<cr>
+nnoremap <silent> <LocalLeader>mg :JavaGetSet<cr>
+nnoremap <silent> <LocalLeader>c :JavaCorrect<cr>
+nnoremap <silent> <LocalLeader>si :ScalaImport<cr>
+nnoremap <silent> <LocalLeader>s :ScalaSearch<cr>
+nnoremap <silent> <LocalLeader>j :JavaSearchContext<cr>
+nnoremap <silent> <LocalLeader>i :JavaImport<cr>
+
+nmap <silent> <LocalLeader>d <Plug>DashSearch
+nmap <LocalLeader>ff :QuickFixClear<cr>
+nmap <LocalLeader>ss :SignClearAll<cr>
+
+" edit snippets
+map <LocalLeader>ej :sp ~/.vim/bundle/snipmate-snippets/snippets/java.snippets<cr>
+map <LocalLeader>eg :sp ~/.vim/bundle/snipmate-snippets/snippets/_.snippets<cr>
+
+nmap <Tab> :bn<CR>
+nmap <LocalLeader>iv :set list!<CR>
