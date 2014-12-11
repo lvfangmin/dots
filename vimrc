@@ -202,3 +202,8 @@ set pastetoggle=<F2>
 
 map <LocalLeader>r :MRU<cr>
 map <Space> <c-f>
+
+syntax enable
+set background=light
+"colorscheme solarized
+let g:solarized_termcolors=256

@@ -1,0 +1,600 @@
+
+
+NERDTreeMapPreviewSplit  gi
+tagbar_indent         #2
+EclimTemplatesDisabled #1
+NERDTreeMapCloseChildren  X
+EclimFatalHighlight    Error
+__XPTEMPLATE_VIM__    #2
+tagbar_singleclick    #0
+acp_behaviorHtmlOmniLength #0
+loaded_nerdtree_autoload #1
+ack_lhandler           botright lopen
+ack_qhandler           botright copen
+NERDTreeOpener        {'_previousWindow': function('265'), '_openDirectory': function('264'), '_restoreCursorPos': function('266'), '_saveCursorPos': function('268'), '_newSplit': function('260'), '_checkToCloseTree': function('257'), '_newVSplit': function('261'), '_openFile': function('263'), 'open': function('262'), '_gotoTargetWin': function('258'), 'New': function('259'), '_reuseWindow': function('267')}
+xptemplate_highlight_nested #0
+xmltypes              {'form-validation': 'commonsvalidator', 'status': 'forreststatus', 'testsuite': 'junitresult', 'hibernate-mapping': 'hibernate', 'beans': 'spring', 'log4j:configuration': 'log4j', 'project': 'ant', 'document': 'forrestdocument'}
+NERDTreeShowHidden     0
+EclimProjectTabTreeAutoOpen #1
+neocomplcache_enable_smart_case #1
+MRU_Include_Files      
+Powerline_cache_enabled #1
+xptemplate_debug_log   
+snipMate              {'get_snippets': {'faked_function_reference': 'snipMate#GetSnippets'}, 'snippet_dirs': {'faked_function_reference': 'return split(&runtimepath,",")'}, 'get_scopes': {'faked_function_reference': 'return split(&ft,"\\.")+[&syntax, "_"]'}}
+funcoo                 /Users/lvfm/.vim/bundle/funcoo.vim/plugin/funcoo.vim
+Tlist_Enable_Fold_Column #0
+neocomplcache_min_keyword_length #4
+ConqueTerm_EscKey      <Esc>
+java_allow_cpp_keywords #1
+MRU_Add_Menu          #1
+xptemplate_always_show_pum #0
+NERDTreeMapCloseDir    x
+ConqueTerm_Color      #1
+LIST_TYPE             #3
+EclimErrorHighlight    none
+tagbar_map_openfold   ['+', '<kPlus>', 'zo']
+tlib_cache             
+XPT#item_var           \V$\w\+
+EclimJavaCompilerAutoDetect #1
+loaded_acp            #1
+EclimShowQuickfixSigns #1
+xptemplate_pum_tab_nav #0
+acp_behaviorCssOmniPropertyLength #1
+val                   #1
+NERDTreeSortOrder     ['\/$', '*', '\.swp$', '\.bak$', '\~$']
+NERDTreeMinimalUI     #0
+loaded_zipPlugin       v23
+EclimProjectRefreshFiles #1
+NERDTreeMapRefresh     r
+EclimJavaCallHierarchyDefaultAction  split
+loaded_2html_plugin    vim7.3_v6
+Pl#OLD_STL             %f %y %([%R%M]%)%#StatusLineNC#%{&ff=='unix'?'':&ff.' format'}%*%{'$'[!&list]}%{'~'[&pm=='']}%=#%n %l/%L,%c%V %{XPMautoUpdate("statusline")}
+Tlist_Compact_Format  #0
+loaded_mru            #1
+loaded_spellfile_plugin #1
+loaded_tlib           #104
+CommandTMinHeight     #3
+EclimQuickfixSignText  ▸▸
+xptemplate_nav_next_2  <Tab>
+STRING_TYPE           #1
+NERDTreeAutoDeleteBuffer #0
+MRU_Use_Current_Window #0
+acp_behaviorKeywordCommand  ^N
+loaded_neocomplcache_include_complete #1
+EclimBuffersTabTracking #1
+__XPT_VIM__           #1
+ConqueTerm_SendFileKey  <F10>
+neocomplcache_enable_caching_message #1
+xptemplate_hook_before_cr  
+jshintprg              jshint
+ConqueTerm_SendFunctionKeys #0
+__XPTEMPLATE_PARSER_VIM__ #2
+NERDTreeIgnore        ['\~$']
+EclimLogLevel         #4
+NERDTreeKeyMap        {'All': function('227'), 'BindAll': function('229'), 'Create': function('234'), 'bind': function('230'), 'Add': function('235'), 'FindFor': function('228'), 'Invoke': function('233'), 'invoke': function('232'), 'Remove': function('231')}
+loaded_nerdtree_fs_menu #1
+EclimTraceHighlight    Normal
+XPT#nullList          []
+map                    help
+XPT#nonsafeHint        $(
+tagbar_show_linenumbers #0
+EclimValidateSortResults  occurrence
+neocomplcache_disable_auto_complete #0
+tagbar_map_prevtag     <C-P>
+Pl#THEME_CALLBACKS    [['function! PowerlineStatuslineCallback_ctrlp_main(...){{NEWLINE}}return Pl#StatuslineCallback(''%(%(%#Ple7ffffff62875fd7N# %-3{"%3"} %)%#Pl62875fd7e7ffffffN#⮀%)%(%(%#Pl375f00afe7ffffffb# %-9{"%4"} %)%#Ple7ffffff62875fd7N#⮀%)%(%(%#Ple7ffffff62875fd7N# %-3{"%5"} %)%#Pl62875fd7375f00afN#⮀%)%(%(%#Plc4ff0000375f00afb# %{"%6" == " <+>" ? "" : strpart("%6", 2, len("%6") - 3)} %)%#Pl375f00af375f00afN#⮀%)%<%#Ple7ffffff375f00afN#%=%(%#Pl375f00af375f00afN#⮂%(%#Plbdd7d7ff375f00afN# %{"%0"} %)%)%(%#Plbdd7d7ff375f00afN#⮃%(%#Plbdd7d7ff375f00afN# %{"%1"} %)%)%(%#Pl62875fd7375f00afN#⮂%(%#Ple7ffffff62875fd7N# %{substitute(getcwd(), expand("$HOME"), "~", "g")} %)%)'', a:000){{NEWLINE}}endfunction', 'if ! exists("g:ctrlp_status_func") | let g:ctrlp_status_func = {} | endif | let g:ctrlp_status_func.main = "PowerlineStatuslineCallback_ctrlp_main"'], ['function! PowerlineStatuslineCallback_ctrlp_prog(...){{NEWLINE}}return Pl#StatuslineCallback(''%(%(%#Pl375f00afe7ffffffN# %-6{"%0"} %)%#Ple7ffffff375f00afN#⮀%)%<%#Ple7ffffff375f00afN#%=%(%#Pl62875fd7375f00afN#⮂%(%#Ple7ffffff62875fd7N# %{substitute(getcwd(), expand("$HOME"), "~", "g")} %)%)'', a:000){{NEWLINE}}endfunction', 'if ! exists("g:ctrlp_status_func") | let g:ctrlp_status_func = {} | endif | let g:ctrlp_status_func.prog = "PowerlineStatuslineCallback_ctrlp_prog"']]
+NERDTreeMapToggleHidden  I
+NERDTreeWinSize       #25
+java_minlines         #10
+MRU_Open_File_Use_Tabs #0
+tlib_inputlist_shortmessage #0
+loaded_getscriptPlugin  v32
+MRU_Exclude_Files      
+XPT#ptnIncSimp         \V\^:\zs\(\.\{-}\)\ze:\$
+__AL_XPT_EVAL_y732hj43k__ #2
+vimsyn_embed           lmpPr
+xptemplate_fallback_condition  \V\c<Tab>
+tlib_scroll_lines     #10
+tlib_keyagents_InputList_m {'1': 'tlib#agent#SelectAll', '35': 'tlib#agent#Select', '<80><fd>^D': 'tlib#agent#SelectUp', '<80><fd>^E': 'tlib#agent#SelectDown', '225': 'tlib#agent#SelectAll'}
+EclimProjectProblemsUpdateOnBuild #1
+EclimInfoHighlight     Statement
+XPM_RET               {'likely_matched': {'likely_matched': 1}, 'undo_redo': {'undo_redo': 1}, 'no_updated_made': {'no_updated_made': 1}, 'updated': {'updated': 1}}
+tlib_keyagents_InputList_s {'63': 'tlib#agent#Help', '<80>kN': 'tlib#agent#PageDown', '<80><fc>^B ': 'tlib#agent#Wildcard', '<80>kP': 'tlib#agent#PageUp', '<80><fc>^D<80>kb': 'tlib#agent#PopFilter', '15': 'tlib#agent#SuspendToParentWindow', '<80><fc>^D<80>kd': 'tlib#agent#DownN', '17': 'tlib#agent#Input', '18': 'tlib#agent#Reset', '32': 'tlib#agent#AND', '241': 'tlib#agent#Input', '242': 'tlib#agent#Reset', '<80>kb': 'tlib#agent#ReduceFilter', '<80>kd': 'tlib#agent#Down', '<80><fc>^D<80>ku': 'tlib#agent#UpN', '<80><fc>^H<80>kD': 'tlib#agent#PopFilter', '<80>kl': 'tlib#agent#ShiftLeft', '<80>kD': 'tlib#agent#ReduceFilter', '<80>k1': 'tlib#agent#Help', '<80>kr': 'tlib#agent#ShiftRight', '<80><fc>^D<80>kD': 'tlib#agent#PopFilter', '<80>ku': 'tlib#agent#Up', '26': 'tlib#agent#Suspend', '27': 'tlib#agent#Exit', '<80>k;': 'tlib#agent#ExecAgentByName', '124': 'tlib#agent#OR', '191': 'tlib#agent#Debug', '250': 'tlib#agent#Suspend', '<80><fc>^H<80>kb': 'tlib#agent#PopFilter', '<80><fc>^B^[': 'tlib#agent#ExecAgentByName'}
+XPT#regEval            \V\w(\|$\w
+tagbar_map_closefold  ['-', '<kMinus>', 'zc']
+NERDTreeMapToggleFiles  F
+neocomplcache_enable_prefetch #0
+neocomplcache_max_menu_width #15
+__XPMARK_VIM__        #2
+NERDTreeCreator       {'BufNamePrefix': function('211'), 'createSecondary': function('215'), '_createTreeWin': function('218'), 'TogglePrimary': function('225'), '_nextBufferName': function('220'), 'togglePrimary': function('226'), 'createMirror': function('217'), '_setupStatusline': function('224'), 'CreatePrimary': function('212'), '_setCommonBufOptions': function('223'), 'CreateSecondary': function('214'), 'New': function('219'), '_NextBufNum': 1, '_broadcastInitEvent': function('210'), 'CreateMirror': function('216'), '_pathForString': function('222'), 'createPrimary': function('213'), '_nextBufferNumber': function('221'), '_bindMappings': function('209')}
+CommandTMaxHeight     #8
+NERDTreeMapToggleFilters  f
+neocomplcache_skip_auto_completion_time  0.3
+EclimBuffersDeleteOnTabClose #0
+XPT#DONE              #256
+__AL_XPT_PRIORITY_f78d9s873942__ #2
+EasyMotion_keys        abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+xptRenderPhase        {'inited': 'inited', 'rendering': 'rendering', 'iteminit': 'iteminit', 'rendered': 'rendered', 'fillin': 'fillin', 'uninit': 'uninit', 'popup': 'popup', 'post': 'post', 'finished': 'finished'}
+neocomplcache_disable_caching_file_path_pattern  
+neocomplcache_enable_camel_case_completion #1
+Pl#HL                 ['hi Ple7ffffffa0d70000b ctermfg=231 ctermbg=160 cterm=bold guifg=#ffffff guibg=#d70000 gui=bold', 'hi Pla0d70000f0585858N ctermfg=160 ctermbg=240 cterm=NONE guifg=#d70000 guibg=#585858 gui=NONE', 'hi Plc4ff0000f0585858b ctermfg=196 ctermbg=240 cterm=bold guifg=#ff0000 guibg=#585858 gui=bold', 'hi Plfcd0d0d0f0585858N ctermfg=252 ctermbg=240 cterm=NONE guifg=#d0d0d0 guibg=#585858 gui=NONE', 'hi Ple7fffffff0585858b ctermfg=231 ctermbg=240 cterm=bold guifg=#ffffff guibg=#585858 gui=bold', 'hi Plf0585858ec303030N ctermfg=240 ctermbg=236 cterm=NONE guifg=#585858 guibg=#303030 gui=NONE', 'hi Plf79e9e9eec303030N ctermfg=247 ctermbg=236 cterm=NONE guifg=#9e9e9e guibg=#303030 gui=NONE', 'hi Plec303030ec303030N ctermfg=236 ctermbg=236 cterm=NONE guifg=#303030 guibg=#303030 gui=NONE', 'hi Ple7ffffffec303030N ctermfg=231 ctermbg=236 cterm=NONE guifg=#ffffff guibg=#303030 gui=NONE', 'hi Plfabcbcbcf0585858N ctermfg=250 ctermbg=240 cterm=NONE guifg=#bcbcbc guibg=#585858 gui=NONE', 'hi Plec303030fcd0d0d0b ctermfg=236 ctermbg=252 cterm=bold guifg=#303030 guibg=#d0d0d0 gui=bold', 'hi Plf4808080fcd0d0d0N ctermfg=244 ctermbg=252 cterm=NONE guifg=#808080 guibg=#d0d0d0 gui=NONE', 'hi Pla0d70000f1626262N ctermfg=160 ctermbg=241 cterm=NONE guifg=#d70000 guibg=#626262 gui=NONE', 'hi Ple7fffffff1626262b ctermfg=231 ctermbg=241 cterm=bold guifg=#ffffff guibg=#626262 gui=bold', 'hi Plf1626262f0585858N ctermfg=241 ctermbg=240 cterm=NONE guifg=#626262 guibg=#585858 gui=NONE', 'hi Pl58870000e9121212N ctermfg=88 ctermbg=233 cterm=NONE guifg=#870000 guibg=#121212 gui=NONE', 'hi Plf1626262e9121212N ctermfg=241 ctermbg=233 cterm=NONE guifg=#626262 guibg=#121212 gui=NONE', 'hi Plf58a8a8ae9121212b ctermfg=245 ctermbg=233 cterm=bold guifg=#8a8a8a guibg=#121212 gui=bold', 'hi Ple9121212e9121212N ctermfg=233 ctermbg=233 cterm=NONE guifg=#121212 guibg=#121212 gui=NONE', 'hi Ple7ffffffe9121212N ctermfg=231 ctermbg=233 cterm=NONE guifg=#ffffff guibg=#121212 gui=NONE', 'hi Plf0585858eb262626N ctermfg=240 ctermbg=235 cterm=NONE guifg=#585858 guibg=#262626 gui=NONE', 'hi Pleb262626e9121212N ctermfg=235 ctermbg=233 cterm=NONE guifg=#262626 guibg=#121212 gui=NONE', 'hi Plf58a8a8aeb262626b ctermfg=245 ctermbg=235 cterm=bold guifg=#8a8a8a guibg=#262626 gui=bold', 'hi Plf1626262eb262626N ctermfg=241 ctermbg=235 cterm=NONE guifg=#626262 guibg=#262626 gui=NONE', 'hi Pla0d70000d0ff8700N ctermfg=160 ctermbg=208 cterm=NONE guifg=#d70000 guibg=#ff8700 gui=NONE', 'hi Pl58870000d0ff8700b ctermfg=88 ctermbg=208 cterm=bold guifg=#870000 guibg=#ff8700 gui=bold', 'hi Pld0ff8700f0585858N ctermfg=208 ctermbg=240 cterm=NONE guifg=#ff8700 guibg=#585858 gui=NONE', 'hi Pla0d70000e7ffffffN ctermfg=160 ctermbg=231 cterm=NONE guifg=#d70000 guibg=#ffffff gui=NONE', 'hi Pl17005f5fe7ffffffb ctermfg=23 ctermbg=231 cterm=bold guifg=#005f5f guibg=#ffffff gui=bold', 'hi Ple7ffffff1f0087afN ctermfg=231 ctermbg=31 cterm=NONE guifg=#ffffff guibg=#0087af gui=NONE', 'hi Plc4ff00001f0087afb ctermfg=196 ctermbg=31 cterm=bold guifg=#ff0000 guibg=#0087af gui=bold', 'hi Pl7587d7ff1f0087afN ctermfg=117 ctermbg=31 cterm=NONE guifg=#87d7ff guibg=#0087af gui=NONE', 'hi Ple7ffffff1f0087afb ctermfg=231 ctermbg=31 cterm=bold guifg=#ffffff guibg=#0087af gui=bold', 'hi Pl1f0087af18005f87N ctermfg=31 ctermbg=24 cterm=NONE guifg=#0087af guibg=#005f87 gui=NONE', 'hi Pl7587d7ff18005f87N ctermfg=117 ctermbg=24 cterm=NONE guifg=#87d7ff guibg=#005f87 gui=NONE', 'hi Pl18005f8718005f87N ctermfg=24 ctermbg=24 cterm=NONE guifg=#005f87 guibg=#005f87 gui=NONE', 'hi Ple7ffffff18005f87N ctermfg=231 ctermbg=24 cterm=NONE guifg=#ffffff guibg=#005f87 gui=NONE', 'hi Pl17005f5f7587d7ffb ctermfg=23 ctermbg=117 cterm=bold guifg=#005f5f guibg=#87d7ff gui=bold', 'hi Pl17005f5f7587d7ffN ctermfg=23 ctermbg=117 cterm=NONE guifg=#005f5f guibg=#87d7ff gui=NONE', 'hi Pla0d7000094afd700N ctermfg=160 ctermbg=148 cterm=NONE guifg=#d70000 guibg=#afd700 gui=NONE', 'hi Pl16005f0094afd700b ctermfg=22 ctermbg=148 cterm=bold guifg=#005f00 guibg=#afd700 gui=bold', 'hi Pl94afd700f0585858N ctermfg=148 ctermbg=240 cterm=NONE guifg=#afd700 guibg=#585858 gui=NONE', 'hi Ple7ffffff7caf0000b ctermfg=231 ctermbg=124 cterm=bold guifg=#ffffff guibg=#af0000 gui=bold', 'hi Pl7caf000058870000N ctermfg=124 ctermbg=88 cterm=NONE guifg=#af0000 guibg=#870000 gui=NONE', 'hi Ple7ffffff58870000N ctermfg=231 ctermbg=88 cterm=NONE guifg=#ffffff guibg=#870000 gui=NONE', 'hi Pl5887000058870000N ctermfg=88 ctermbg=88 cterm=NONE guifg=#870000 guibg=#870000 gui=NONE', 'hi Pla0d70000345f0000b ctermfg=160 ctermbg=52 cterm=bold guifg=#d70000 guibg=#5f0000 gui=bold', 'hi Pl345f0000345f0000N ctermfg=52 ctermbg=52 cterm=NONE guifg=#5f0000 guibg=#5f0000 gui=NONE', 'hi Ple7ffffff345f0000N ctermfg=231 ctermbg=52 cterm=NONE guifg=#ffffff guibg=#5f0000 gui=NONE', 'hi Pla0d70000345f0000N ctermfg=160 ctermbg=52 cterm=NONE guifg=#d70000 guibg=#5f0000 gui=NONE', 'hi Ple7fffffff0585858N ctermfg=231 ctermbg=240 cterm=NONE guifg=#ffffff guibg=#585858 gui=NONE', 'hi Plf58a8a8aeb262626N ctermfg=245 ctermbg=235 cterm=NONE guifg=#8a8a8a guibg=#262626 gui=NONE', 'hi Ple7ffffff465faf00b ctermfg=231 ctermbg=70 cterm=bold guifg=#ffffff guibg=#5faf00 gui=bold', 'hi Pl465faf001c008700N ctermfg=70 ctermbg=28 cterm=NONE guifg=#5faf00 guibg=#008700 gui=NONE', 'hi Pl94afd7001c008700N ctermfg=148 ctermbg=28 cterm=NONE guifg=#afd700 guibg=#008700 gui=NONE', 'hi Pl1c0087001c008700N ctermfg=28 ctermbg=28 cterm=NONE guifg=#008700 guibg=#008700 gui=NONE', 'hi Ple7ffffff1c008700N ctermfg=231 ctermbg=28 cterm=NONE guifg=#ffffff guibg=#008700 gui=NONE', 'hi Pl465faf0016005f00b ctermfg=70 ctermbg=22 cterm=bold guifg=#5faf00 guibg=#005f00 gui=bold', 'hi Pl465faf0016005f00N ctermfg=70 ctermbg=22 cterm=NONE guifg=#5faf00 guibg=#005f00 gui=NONE', 'hi Pl16005f0016005f00N ctermfg=22 ctermbg=22 cterm=NONE guifg=#005f00 guibg=#005f00 gui=NONE', 'hi Ple7ffffff16005f00N ctermfg=231 ctermbg=22 cterm=NONE guifg=#ffffff guibg=#005f00 gui=NONE', 'hi Ple7ffffff62875fd7N ctermfg=231 ctermbg=98 cterm=NONE guifg=#ffffff guibg=#875fd7 gui=NONE', 'hi Pl62875fd7e7ffffffN ctermfg=98 ctermbg=231 cterm=NONE guifg=#875fd7 guibg=#ffffff gui=NONE', 'hi Pl375f00afe7ffffffb ctermfg=55 ctermbg=231 cterm=bold guifg=#5f00af guibg=#ffffff gui=bold', 'hi Pl62875fd7375f00afN ctermfg=98 ctermbg=55 cterm=NONE guifg=#875fd7 guibg=#5f00af gui=NONE', 'hi Plc4ff0000375f00afb ctermfg=196 ctermbg=55 cterm=bold guifg=#ff0000 guibg=#5f00af gui=bold', 'hi Pl375f00af375f00afN ctermfg=55 ctermbg=55 cterm=NONE guifg=#5f00af guibg=#5f00af gui=NONE', 'hi Ple7ffffff375f00afN ctermfg=231 ctermbg=55 cterm=NONE guifg=#ffffff guibg=#5f00af gui=NONE', 'hi Plbdd7d7ff375f00afN ctermfg=189 ctermbg=55 cterm=NONE guifg=#d7d7ff guibg=#5f00af gui=NONE', 'hi Pl375f00afe7ffffffN ctermfg=55 ctermbg=231 cterm=NONE guifg=#5f00af guibg=#ffffff gui=NONE']
+acp_behaviorXmlOmniLength #0
+NUMBER_TYPE           #0
+__XPTEMPLATE_CONF_VIM__ #2
+tagbar_map_togglefold ['o', 'za']
+__RENDERCONTEXT_VIM__ #2
+EasyMotion_hl_group_target  EasyMotionTarget
+Powerline_theme        default
+loaded_funcoo         #1
+acp_behaviorUserDefinedMeets  
+NERDTreeMapPreview     go
+EasyMotion_do_mapping #1
+ConqueTerm_PyExe       
+xptemplate_pum_quick_back #1
+loaded_snips          #1
+MRU_Max_Entries       #100
+NERDTreeDirArrows      1
+ConqueTerm_ColorMode   
+EclimSignLevel        #5
+xptemplate_highlight   next
+did_load_filetypes    #1
+NERDTreeNotificationThreshold  100
+NERDTreeMapActivateNode  o
+XPT#NOTBUILT          #2
+tcommentMapLeaderOp1   gc
+tcommentMapLeaderOp2   gC
+xptemplate_brace_complete #0
+EclimMakeLCD          #0
+xptemplate_snippet_folders []
+tarbar_autofocus      #1
+loaded_vimballPlugin   v31
+XPT#AGAIN             #1024
+NERDTreeWinPos         left
+EasyMotion_mapping_E   ,,E
+EclimDebugHighlight    Normal
+loaded_tarPlugin       v26
+tlib_inputlist_higroup  IncSearch
+tagbar_left           #0
+bs                     2
+searchFilePath         /Users/lvfm/work/program/java/ybk/yahoo/branch/current/hedwig-server/src/main/java /Users/lvfm/work/program/java/ybk/yahoo/branch/current/hedwig-protocol/src/main/java /Users/lvfm/work/program/java/ybk/yahoo/branch/current/hedwig-client/src/main/java /Users/lvfm/work/program/java/ybk/yahoo/branch/current/bookkeeper-server/src/main/java
+tlib_viewline_position  zz
+tlib_scratch_pos       botright
+EclimLoclistSignText   ▸▸
+xptemplate_vars        
+NERDTreeMapMenu        m
+tagbar_previewwin_pos  topleft
+xptBundle             {}
+save_cpo               aABceFs
+ConqueTerm_Version    #230
+acp_behaviorSnipmateLength #-1
+xptemplate_nav_prev    <S-Tab>
+NERDTreeStatusline     %{exists('b:NERDTreeRoot')?b:NERDTreeRoot.path.str():''}
+tlib_inputlist_or      |
+NERDTreeFileNode      {'isRoot': function('355'), 'openInNewTab': function('361'), 'rename': function('364'), 'activate': function('339'), 'clearBookmarks': function('342'), 'displayString': function('345'), 'cacheParent': function('341'), 'delete': function('344'), 'New': function('357'), 'findNode': function('347'), '_renderToString': function('366'), 'openSplit': function('359'), 'makeRoot': function('356'), 'findOpenDirSiblingWithVisibleChildren': function('348'), 'findSibling': function('349'), 'renderToString': function('365'), 'refresh': function('363'), 'openVSplit': function('360'), 'GetRootLineNum': function('352'), 'bookmark': function('340'), 'putCursorHere': function('362'), 'getLineNum': function('350'), 'equals': function('346'), 'isVisible': function('354'), 'copy': function('343'), 'GetSelected': function('353'), 'open': function('358'), 'GetRootForTab': function('351')}
+tagbar_map_jump        <CR>
+tagbar_type_scala     {'ctagstype': 'Scala', 'kinds': ['p:packages:1', 'V:values', 'v:variables', 'T:types', 't:traits', 'o:objects', 'a:aclasses', 'c:classes', 'r:cclasses', 'm:methods']}
+XPT#nullDict          {}
+xptemplate_key_force_pum  <C-r><C-\>
+Powerline_cache_dir    /Users/lvfm/.vim/bundle/vim-powerline
+NERDTreeMapOpenInTabSilent  T
+acp_behaviorPerlOmniLength #-1
+EclimScalaValidate    #1
+NERDTreePath          {'copyingWillOverwrite': function('277'), 'ignore': function('289'), 'delete': function('278'), 'getSortOrderIndex': function('286'), 'compareTo': function('273'), 'AbsolutePathFor': function('269'), 'displayString': function('279'), 'rename': function('299'), 'CopyingSupported': function('276'), '_strForUI': function('301'), 'strTrunk': function('306'), 'cacheDisplayString': function('271'), 'getLastPathComponent': function('285'), 'edit': function('280'), 'exists': function('282'), 'isUnixHiddenPath': function('288'), 'JoinPathStrings': function('292'), 'Slash': function('295'), 'bookmarkNames': function('270'), 'tabnr': function('307'), 'Create': function('274'), 'readInfoFromDisk': function('297'), '_strForGlob': function('304'), 'isUnder': function('291'), 'extractDriveLetter': function('281'), '_strForCd': function('302'), 'New': function('294'), 'getDir': function('283'), 'str': function('300'), '_ignorePatternMatches': function('290'), 'equals': function('293'), '_str': function('305'), 'WinToUnixPath': function('308'), 'copy': function('275'), 'isUnixHiddenFile': function('287'), 'refresh': function('298'), 'changeToDir': function('272'), '_strForEdit': function('303'), 'getParent': function('284'), 'Resolve': function('296')}
+NERDTreeMapHelp        ?
+XPT#nonsafe            {$( 
+ConqueTerm_FastMode   #0
+FLOAT_TYPE            #5
+tlib_inputlist_and      
+NERDTreeMapJumpParent  p
+acp_behaviorUserDefinedFunction  
+xptemplate_key_visual_2  <C-\>
+EclimCompletionMethod  completefunc
+ConqueTerm_PyVersion  #2
+NERDTreeCasadeOpenSingleChildDir  1
+RenderContext         {'SwitchPhase': function('<SNR>78_SwitchPhase'), '__init__': function('<SNR>78_New'), 'New': function('XPT#classNew')}
+tlib_inputlist_filename_indicators #0
+NERDTreeMapJumpLastChild  J
+xptemplate_move_even_with_pum #0
+EclimBuffersDefaultAction  split
+XPT#ptnPreEvalFunc     \v^%(Inc|Inline|ResetIndent|Pre)\(
+__UTIL_VIM__          #2
+neocomplcache_sources_list {}
+NERDTreeMapJumpPrevSibling  <C-k>
+xptemplate_nav_next    <Tab>
+xptemplate_key_visual  <C-\>
+__XPT_PLUGIN_HIGHLIGHT_VIM__ #2
+xptemplate_fix        #1
+NERDTreeShowBookmarks  0
+XPMpreferLeft          l
+tlib_inputlist_width_filename  &co / 3
+NERDTreeRemoveDirCmd   rm -rf 
+snipMateSources       {'default': {'faked_function_reference': 'snipMate#DefaultPool'}}
+tlib_tag_substitute   {'vim': [['^\s*com\%[mand]!\?\(\s\+-\S\+\)*\s*\u\w*\zs.*$', '', ''], ['^\s*\(let\|aug\%[roup]\|fu\%[nction]!\?\|com\%[mand]!\?\(\s\+-\S\+\)*\)\s*', '', ''], ['"\?\s*{{{\d.*$', '', '']], 'java': [['\s*{\s*$', '', '']], 'ruby': [['\<\(def\|class\|module\)\>\s\+', '', '']]}
+NERDTreeMenuItem      {'isSeparator': function('255'), 'All': function('248'), 'AllEnabled': function('249'), 'execute': function('254'), 'enabled': function('253'), 'isSubmenu': function('256'), 'Create': function('250'), 'CreateSubmenu': function('252'), 'CreateSeparator': function('251')}
+Powerline_dividers_override []
+Powerline_loaded      #1
+NERDTreeMouseMode      1
+delimitMate_version    2.6
+Pl#THEME              [{'mode_statuslines': {'r': '%(%(%#Ple7ffffffa0d70000b# %{&paste ? "PASTE" : ""} %)%#Ple7ffffffa0d70000b#⮁%)%(%(%#Ple7ffffffa0d70000b# %{Powerline#Functions#GetMode()} %)%#Pla0d70000f0585858N#⮀%)%( %(%#Plc4ff0000f0585858b#%{&readonly ? "⭤" : ""} %)%(%#Plfcd0d0d0f0585858N#%{Powerline#Functions#GetFilepath()}%)%(%#Ple7fffffff0585858b#%t %)%(%#Plc4ff0000f0585858b#%M %)%(%#Plc4ff0000f0585858b#%H%W %)%#Plf0585858ec303030N#⮀%)%<%(%(%#Plf79e9e9eec303030N# %{tagbar#currenttag("%s", "")} %)%#Plec303030ec303030N#⮀%)%#Ple7ffffffec303030N#%=%(%#Plec303030ec303030N#⮂%(%#Plf79e9e9eec303030N# %{&fileformat} %)%)%(%#Plf79e9e9eec303030N#⮃%(%#Plf79e9e9eec303030N# %{(&fenc == "" ? &enc : &fenc)} %)%)%(%#Plf79e9e9eec303030N#⮃%(%#Plf79e9e9eec303030N# %{strlen(&ft) ? &ft : "no ft"} %)%)%(%#Plf0585858ec303030N#⮂%(%#Plfabcbcbcf0585858N# %3p%% %)%)%(%#Plfcd0d0d0f0585858N#⮂%(%#Plec303030fcd0d0d0b# ⭡ %3l%)%(%#Plf4808080fcd0d0d0N#:%-2v%) %)', 's': '%(%(%#Ple7ffffffa0d70000b# %{&paste ? "PASTE" : ""} %)%#Pla0d70000f1626262N#⮀%)%(%(%#Ple7fffffff1626262b# %{Powerline#Functions#GetMode()} %)%#Plf1626262f0585858N#⮀%)%( %(%#Plc4ff0000f0585858b#%{&readonly ? "⭤" : ""} %)%(%#Plfcd0d0d0f0585858N#%{Powerline#Functions#GetFilepath()}%)%(%#Ple7fffffff0585858b#%t %)%(%#Plc4ff0000f0585858b#%M %)%(%#Plc4ff0000f0585858b#%H%W %)%#Plf0585858ec303030N#⮀%)%<%(%(%#Plf79e9e9eec303030N# %{tagbar#currenttag("%s", "")} %)%#Plec303030ec303030N#⮀%)%#Ple7ffffffec303030N#%=%(%#Plec303030ec303030N#⮂%(%#Plf79e9e9eec303030N# %{&fileformat} %)%)%(%#Plf79e9e9eec303030N#⮃%(%#Plf79e9e9eec303030N# %{(&fenc == "" ? &enc : &fenc)} %)%)%(%#Plf79e9e9eec303030N#⮃%(%#Plf79e9e9eec303030N# %{strlen(&ft) ? &ft : "no ft"} %)%)%(%#Plf0585858ec303030N#⮂%(%#Plfabcbcbcf0585858N# %3p%% %)%)%(%#Plfcd0d0d0f0585858N#⮂%(%#Plec303030fcd0d0d0b# ⭡ %3l%)%(%#Plf4808080fcd0d0d0N#:%-2v%) %)', 'n': '%(%(%#Ple7ffffffa0d70000b# %{&paste ? "PASTE" : ""} %)%#Pla0d7000094afd700N#⮀%)%(%(%#Pl16005f0094afd700b# %{Powerline#Functions#GetMode()} %)%#Pl94afd700f0585858N#⮀%)%( %(%#Plc4ff0000f0585858b#%{&readonly ? "⭤" : ""} %)%(%#Plfcd0d0d0f0585858N#%{Powerline#Functions#GetFilepath()}%)%(%#Ple7fffffff0585858b#%t %)%(%#Plc4ff0000f0585858b#%M %)%(%#Plc4ff0000f0585858b#%H%W %)%#Plf0585858ec303030N#⮀%)%<%(%(%#Plf79e9e9eec303030N# %{tagbar#currenttag("%s", "")} %)%#Plec303030ec303030N#⮀%)%#Ple7ffffffec303030N#%=%(%#Plec303030ec303030N#⮂%(%#Plf79e9e9eec303030N# %{&fileformat} %)%)%(%#Plf79e9e9eec303030N#⮃%(%#Plf79e9e9eec303030N# %{(&fenc == "" ? &enc : &fenc)} %)%)%(%#Plf79e9e9eec303030N#⮃%(%#Plf79e9e9eec303030N# %{strlen(&ft) ? &ft : "no ft"} %)%)%(%#Plf0585858ec303030N#⮂%(%#Plfabcbcbcf0585858N# %3p%% %)%)%(%#Plfcd0d0d0f0585858N#⮂%(%#Plec303030fcd0d0d0b# ⭡ %3l%)%(%#Plf4808080fcd0d0d0N#:%-2v%) %)', 'v': '%(%(%#Ple7ffffffa0d70000b# %{&paste ? "PASTE" : ""} %)%#Pla0d70000d0ff8700N#⮀%)%(%(%#Pl58870000d0ff8700b# %{Powerline#Functions#GetMode()} %)%#Pld0ff8700f0585858N#⮀%)%( %(%#Plc4ff0000f0585858b#%{&readonly ? "⭤" : ""} %)%(%#Plfcd0d0d0f0585858N#%{Powerline#Functions#GetFilepath()}%)%(%#Ple7fffffff0585858b#%t %)%(%#Plc4ff0000f0585858b#%M %)%(%#Plc4ff0000f0585858b#%H%W %)%#Plf0585858ec303030N#⮀%)%<%(%(%#Plf79e9e9eec303030N# %{tagbar#currenttag("%s", "")} %)%#Plec303030ec303030N#⮀%)%#Ple7ffffffec303030N#%=%(%#Plec303030ec303030N#⮂%(%#Plf79e9e9eec303030N# %{&fileformat} %)%)%(%#Plf79e9e9eec303030N#⮃%(%#Plf79e9e9eec303030N# %{(&fenc == "" ? &enc : &fenc)} %)%)%(%#Plf79e9e9eec303030N#⮃%(%#Plf79e9e9eec303030N# %{strlen(&ft) ? &ft : "no ft"} %)%)%(%#Plf0585858ec303030N#⮂%(%#Plfabcbcbcf0585858N# %3p%% %)%)%(%#Plfcd0d0d0f0585858N#⮂%(%#Plec303030fcd0d0d0b# ⭡ %3l%)%(%#Plf4808080fcd0d0d0N#:%-2v%) %)', 'i': '%(%(%#Ple7ffffffa0d70000b# %{&paste ? "PASTE" : ""} %)%#Pla0d70000e7ffffffN#⮀%)%(%(%#Pl17005f5fe7ffffffb# %{Powerline#Functions#GetMode()} %)%#Ple7ffffff1f0087afN#⮀%)%( %(%#Plc4ff00001f0087afb#%{&readonly ? "⭤" : ""} %)%(%#Pl7587d7ff1f0087afN#%{Powerline#Functions#GetFilepath()}%)%(%#Ple7ffffff1f0087afb#%t %)%(%#Plc4ff00001f0087afb#%M %)%(%#Plc4ff00001f0087afb#%H%W %)%#Pl1f0087af18005f87N#⮀%)%<%(%(%#Pl7587d7ff18005f87N# %{tagbar#currenttag("%s", "")} %)%#Pl18005f8718005f87N#⮀%)%#Ple7ffffff18005f87N#%=%(%#Pl18005f8718005f87N#⮂%(%#Pl7587d7ff18005f87N# %{&fileformat} %)%)%(%#Pl7587d7ff18005f87N#⮃%(%#Pl7587d7ff18005f87N# %{(&fenc == "" ? &enc : &fenc)} %)%)%(%#Pl7587d7ff18005f87N#⮃%(%#Pl7587d7ff18005f87N# %{strlen(&ft) ? &ft : "no ft"} %)%)%(%#Pl1f0087af18005f87N#⮂%(%#Pl7587d7ff1f0087afN# %3p%% %)%)%(%#Pl7587d7ff1f0087afN#⮂%(%#Pl17005f5f7587d7ffb# ⭡ %3l%)%(%#Pl17005f5f7587d7ffN#:%-2v%) %)', 'N': '%( %(%#Pl58870000e9121212N#%{&readonly ? "⭤" : ""} %)%(%#Plf1626262e9121212N#%{Powerline#Functions#GetFilepath()}%)%(%#Plf58a8a8ae9121212b#%t %)%(%#Pl58870000e9121212N#%M %)%(%#Pl58870000e9121212N#%H%W %)%#Ple9121212e9121212N#⮀%)%<%#Ple7ffffffe9121212N#%=%(%#Pleb262626e9121212N#⮂%(%#Plf0585858eb262626N# %3p%% %)%)%(%#Plf58a8a8aeb262626b#⮃%(%#Plf58a8a8aeb262626b# ⭡ %3l%)%(%#Plf1626262eb262626N#:%-2v%) %)'}, 'matches': ['match', 'any', []]}, {'mode_statuslines': {'r': '%(%(%#Ple7ffffff7caf0000b# %{"Command-T"} %)%#Pl7caf000058870000N#⮀%)%<%#Ple7ffffff58870000N#%=%(%#Pl5887000058870000N#⮂%(%#Ple7ffffff58870000N# %10(Match #%l%) %)%)', 's': '%(%(%#Ple7ffffff7caf0000b# %{"Command-T"} %)%#Pl7caf000058870000N#⮀%)%<%#Ple7ffffff58870000N#%=%(%#Pl5887000058870000N#⮂%(%#Ple7ffffff58870000N# %10(Match #%l%) %)%)', 'n': '%(%(%#Ple7ffffff7caf0000b# %{"Command-T"} %)%#Pl7caf000058870000N#⮀%)%<%#Ple7ffffff58870000N#%=%(%#Pl5887000058870000N#⮂%(%#Ple7ffffff58870000N# %10(Match #%l%) %)%)', 'v': '%(%(%#Ple7ffffff7caf0000b# %{"Command-T"} %)%#Pl7caf000058870000N#⮀%)%<%#Ple7ffffff58870000N#%=%(%#Pl5887000058870000N#⮂%(%#Ple7ffffff58870000N# %10(Match #%l%) %)%)', 'i': '%(%(%#Ple7ffffff7caf0000b# %{"Command-T"} %)%#Pl7caf000058870000N#⮀%)%<%#Ple7ffffff58870000N#%=%(%#Pl5887000058870000N#⮂%(%#Ple7ffffff58870000N# %10(Match #%l%) %)%)', 'N': '%(%(%#Pla0d70000345f0000b# %{"Command-T"} %)%#Pl345f0000345f0000N#⮀%)%<%#Ple7ffffff345f0000N#%=%(%#Pl345f0000345f0000N#⮂%(%#Pla0d70000345f0000N# %10(Match #%l%) %)%)'}, 'matches': ['match', 'any', [['bufname(winbufnr(a:window))', '^GoToFile$']]]}, {'mode_statuslines': {'r': '%(%(%#Ple7ffffff7caf0000b# %{"Gundo"} %)%#Pl7caf000058870000N#⮀%)%(%(%#Ple7ffffff58870000N# %{"Undo tree"} %)%#Pl5887000058870000N#⮀%)%<%#Ple7ffffff58870000N#%=', 's': '%(%(%#Ple7ffffff7caf0000b# %{"Gundo"} %)%#Pl7caf000058870000N#⮀%)%(%(%#Ple7ffffff58870000N# %{"Undo tree"} %)%#Pl5887000058870000N#⮀%)%<%#Ple7ffffff58870000N#%=', 'n': '%(%(%#Ple7ffffff7caf0000b# %{"Gundo"} %)%#Pl7caf000058870000N#⮀%)%(%(%#Ple7ffffff58870000N# %{"Undo tree"} %)%#Pl5887000058870000N#⮀%)%<%#Ple7ffffff58870000N#%=', 'v': '%(%(%#Ple7ffffff7caf0000b# %{"Gundo"} %)%#Pl7caf000058870000N#⮀%)%(%(%#Ple7ffffff58870000N# %{"Undo tree"} %)%#Pl5887000058870000N#⮀%)%<%#Ple7ffffff58870000N#%=', 'i': '%(%(%#Ple7ffffff7caf0000b# %{"Gundo"} %)%#Pl7caf000058870000N#⮀%)%(%(%#Ple7ffffff58870000N# %{"Undo tree"} %)%#Pl5887000058870000N#⮀%)%<%#Ple7ffffff58870000N#%=', 'N': '%(%(%#Pla0d70000345f0000b# %{"Gundo"} %)%#Pla0d70000345f0000b#⮁%)%(%(%#Pla0d70000345f0000N# %{"Undo tree"} %)%#Pl345f0000345f0000N#⮀%)%<%#Ple7ffffff345f0000N#%='}, 'matches': ['match', 'any', [['bufname(winbufnr(a:window))', '^__Gundo__$']]]}, {'mode_statuslines': {'r': '%(%(%#Ple7ffffff7caf0000b# %{"Gundo"} %)%#Pl7caf000058870000N#⮀%)%(%(%#Ple7ffffff58870000N# %{"Diff preview"} %)%#Pl5887000058870000N#⮀%)%<%#Ple7ffffff58870000N#%=', 's': '%(%(%#Ple7ffffff7caf0000b# %{"Gundo"} %)%#Pl7caf000058870000N#⮀%)%(%(%#Ple7ffffff58870000N# %{"Diff preview"} %)%#Pl5887000058870000N#⮀%)%<%#Ple7ffffff58870000N#%=', 'n': '%(%(%#Ple7ffffff7caf0000b# %{"Gundo"} %)%#Pl7caf000058870000N#⮀%)%(%(%#Ple7ffffff58870000N# %{"Diff preview"} %)%#Pl5887000058870000N#⮀%)%<%#Ple7ffffff58870000N#%=', 'v': '%(%(%#Ple7ffffff7caf0000b# %{"Gundo"} %)%#Pl7caf000058870000N#⮀%)%(%(%#Ple7ffffff58870000N# %{"Diff preview"} %)%#Pl5887000058870000N#⮀%)%<%#Ple7ffffff58870000N#%=', 'i': '%(%(%#Ple7ffffff7caf0000b# %{"Gundo"} %)%#Pl7caf000058870000N#⮀%)%(%(%#Ple7ffffff58870000N# %{"Diff preview"} %)%#Pl5887000058870000N#⮀%)%<%#Ple7ffffff58870000N#%=', 'N': '%(%(%#Pla0d70000345f0000b# %{"Gundo"} %)%#Pla0d70000345f0000b#⮁%)%(%(%#Pla0d70000345f0000N# %{"Diff preview"} %)%#Pl345f0000345f0000N#⮀%)%<%#Ple7ffffff345f0000N#%='}, 'matches': ['match', 'any', [['bufname(winbufnr(a:window))', '^__Gundo_Preview__$']]]}, {'mode_statuslines': {'r': '%(%(%#Ple7fffffff0585858N# %{"Help"} %)%#Ple7fffffff0585858N#⮁%)%(%(%#Ple7fffffff0585858b# %t %)%#Plf0585858ec303030N#⮀%)%<%#Ple7ffffffec303030N#%=%(%#Plf0585858ec303030N#⮂%(%#Plfabcbcbcf0585858N# %3p%% %)%)', 's': '%(%(%#Ple7fffffff0585858N# %{"Help"} %)%#Ple7fffffff0585858N#⮁%)%(%(%#Ple7fffffff0585858b# %t %)%#Plf0585858ec303030N#⮀%)%<%#Ple7ffffffec303030N#%=%(%#Plf0585858ec303030N#⮂%(%#Plfabcbcbcf0585858N# %3p%% %)%)', 'n': '%(%(%#Ple7fffffff0585858N# %{"Help"} %)%#Ple7fffffff0585858N#⮁%)%(%(%#Ple7fffffff0585858b# %t %)%#Plf0585858ec303030N#⮀%)%<%#Ple7ffffffec303030N#%=%(%#Plf0585858ec303030N#⮂%(%#Plfabcbcbcf0585858N# %3p%% %)%)', 'v': '%(%(%#Ple7fffffff0585858N# %{"Help"} %)%#Ple7fffffff0585858N#⮁%)%(%(%#Ple7fffffff0585858b# %t %)%#Plf0585858ec303030N#⮀%)%<%#Ple7ffffffec303030N#%=%(%#Plf0585858ec303030N#⮂%(%#Plfabcbcbcf0585858N# %3p%% %)%)', 'i': '%(%(%#Ple7ffffff1f0087afN# %{"Help"} %)%#Ple7ffffff1f0087afN#⮁%)%(%(%#Ple7ffffff1f0087afb# %t %)%#Pl1f0087af18005f87N#⮀%)%<%#Ple7ffffff18005f87N#%=%(%#Pl1f0087af18005f87N#⮂%(%#Pl7587d7ff1f0087afN# %3p%% %)%)', 'N': '%(%(%#Plf58a8a8aeb262626N# %{"Help"} %)%#Pleb262626e9121212N#⮀%)%(%(%#Plf58a8a8ae9121212b# %t %)%#Ple9121212e9121212N#⮀%)%<%#Ple7ffffffe9121212N#%=%(%#Pleb262626e9121212N#⮂%(%#Plf0585858eb262626N# %3p%% %)%)'}, 'matches': ['match', 'any', [['getwinvar(a:window, "&bt")', '^help$']]]}, {'mode_statuslines': {'r': '%(%(%#Ple7fffffff0585858N# %{"Pager"} %)%#Ple7fffffff0585858N#⮁%)%(%(%#Ple7fffffff0585858b# %t %)%#Plf0585858ec303030N#⮀%)%<%#Ple7ffffffec303030N#%=%(%#Plf0585858ec303030N#⮂%(%#Plfabcbcbcf0585858N# %3p%% %)%)', 's': '%(%(%#Ple7fffffff0585858N# %{"Pager"} %)%#Ple7fffffff0585858N#⮁%)%(%(%#Ple7fffffff0585858b# %t %)%#Plf0585858ec303030N#⮀%)%<%#Ple7ffffffec303030N#%=%(%#Plf0585858ec303030N#⮂%(%#Plfabcbcbcf0585858N# %3p%% %)%)', 'n': '%(%(%#Ple7fffffff0585858N# %{"Pager"} %)%#Ple7fffffff0585858N#⮁%)%(%(%#Ple7fffffff0585858b# %t %)%#Plf0585858ec303030N#⮀%)%<%#Ple7ffffffec303030N#%=%(%#Plf0585858ec303030N#⮂%(%#Plfabcbcbcf0585858N# %3p%% %)%)', 'v': '%(%(%#Ple7fffffff0585858N# %{"Pager"} %)%#Ple7fffffff0585858N#⮁%)%(%(%#Ple7fffffff0585858b# %t %)%#Plf0585858ec303030N#⮀%)%<%#Ple7ffffffec303030N#%=%(%#Plf0585858ec303030N#⮂%(%#Plfabcbcbcf0585858N# %3p%% %)%)', 'i': '%(%(%#Ple7ffffff1f0087afN# %{"Pager"} %)%#Ple7ffffff1f0087afN#⮁%)%(%(%#Ple7ffffff1f0087afb# %t %)%#Pl1f0087af18005f87N#⮀%)%<%#Ple7ffffff18005f87N#%=%(%#Pl1f0087af18005f87N#⮂%(%#Pl7587d7ff1f0087afN# %3p%% %)%)', 'N': '%(%(%#Plf58a8a8aeb262626N# %{"Pager"} %)%#Pleb262626e9121212N#⮀%)%(%(%#Plf58a8a8ae9121212b# %t %)%#Ple9121212e9121212N#⮀%)%<%#Ple7ffffffe9121212N#%=%(%#Pleb262626e9121212N#⮂%(%#Plf0585858eb262626N# %3p%% %)%)'}, 'matches': ['match', 'any', [['getwinvar(a:window, "&ft")', 'vimpager']]]}, {'mode_statuslines': {'r': '%(%(%#Ple7ffffff465faf00b# %{"LustyExplorer"} %)%#Pl465faf001c008700N#⮀%)%(%(%#Pl94afd7001c008700N# %{"Buffer list"} %)%#Pl1c0087001c008700N#⮀%)%<%#Ple7ffffff1c008700N#%=', 's': '%(%(%#Ple7ffffff465faf00b# %{"LustyExplorer"} %)%#Pl465faf001c008700N#⮀%)%(%(%#Pl94afd7001c008700N# %{"Buffer list"} %)%#Pl1c0087001c008700N#⮀%)%<%#Ple7ffffff1c008700N#%=', 'n': '%(%(%#Ple7ffffff465faf00b# %{"LustyExplorer"} %)%#Pl465faf001c008700N#⮀%)%(%(%#Pl94afd7001c008700N# %{"Buffer list"} %)%#Pl1c0087001c008700N#⮀%)%<%#Ple7ffffff1c008700N#%=', 'v': '%(%(%#Ple7ffffff465faf00b# %{"LustyExplorer"} %)%#Pl465faf001c008700N#⮀%)%(%(%#Pl94afd7001c008700N# %{"Buffer list"} %)%#Pl1c0087001c008700N#⮀%)%<%#Ple7ffffff1c008700N#%=', 'i': '%(%(%#Ple7ffffff465faf00b# %{"LustyExplorer"} %)%#Pl465faf001c008700N#⮀%)%(%(%#Pl94afd7001c008700N# %{"Buffer list"} %)%#Pl1c0087001c008700N#⮀%)%<%#Ple7ffffff1c008700N#%=', 'N': '%(%(%#Pl465faf0016005f00b# %{"LustyExplorer"} %)%#Pl465faf0016005f00b#⮁%)%(%(%#Pl465faf0016005f00N# %{"Buffer list"} %)%#Pl16005f0016005f00N#⮀%)%<%#Ple7ffffff16005f00N#%='}, 'matches': ['match', 'any', [['bufname(winbufnr(a:window))', '\[LustyExplorer\-Buffers\]']]]}, {'mode_statuslines': {'r': '%(%(%#Ple7fffffff0585858N# %{"Man page"} %)%#Ple7fffffff0585858N#⮁%)%(%(%#Ple7fffffff0585858b# %{Powerline#Functions#ft_man#GetName()} %)%#Plf0585858ec303030N#⮀%)%<%#Ple7ffffffec303030N#%=%(%#Plf0585858ec303030N#⮂%(%#Plfabcbcbcf0585858N# %3p%% %)%)', 's': '%(%(%#Ple7fffffff0585858N# %{"Man page"} %)%#Ple7fffffff0585858N#⮁%)%(%(%#Ple7fffffff0585858b# %{Powerline#Functions#ft_man#GetName()} %)%#Plf0585858ec303030N#⮀%)%<%#Ple7ffffffec303030N#%=%(%#Plf0585858ec303030N#⮂%(%#Plfabcbcbcf0585858N# %3p%% %)%)', 'n': '%(%(%#Ple7fffffff0585858N# %{"Man page"} %)%#Ple7fffffff0585858N#⮁%)%(%(%#Ple7fffffff0585858b# %{Powerline#Functions#ft_man#GetName()} %)%#Plf0585858ec303030N#⮀%)%<%#Ple7ffffffec303030N#%=%(%#Plf0585858ec303030N#⮂%(%#Plfabcbcbcf0585858N# %3p%% %)%)', 'v': '%(%(%#Ple7fffffff0585858N# %{"Man page"} %)%#Ple7fffffff0585858N#⮁%)%(%(%#Ple7fffffff0585858b# %{Powerline#Functions#ft_man#GetName()} %)%#Plf0585858ec303030N#⮀%)%<%#Ple7ffffffec303030N#%=%(%#Plf0585858ec303030N#⮂%(%#Plfabcbcbcf0585858N# %3p%% %)%)', 'i': '%(%(%#Ple7ffffff1f0087afN# %{"Man page"} %)%#Ple7ffffff1f0087afN#⮁%)%(%(%#Ple7ffffff1f0087afb# %{Powerline#Functions#ft_man#GetName()} %)%#Pl1f0087af18005f87N#⮀%)%<%#Ple7ffffff18005f87N#%=%(%#Pl1f0087af18005f87N#⮂%(%#Pl7587d7ff1f0087afN# %3p%% %)%)', 'N': '%(%(%#Plf58a8a8aeb262626N# %{"Man page"} %)%#Pleb262626e9121212N#⮀%)%(%(%#Plf58a8a8ae9121212b# %{Powerline#Functions#ft_man#GetName()} %)%#Ple9121212e9121212N#⮀%)%<%#Ple7ffffffe9121212N#%=%(%#Pleb262626e9121212N#⮂%(%#Plf0585858eb262626N# %3p%% %)%)'}, 'matches': ['match', 'any', [['getwinvar(a:window, "&ft")', '^man$']]]}, {'mode_statuslines': {'r': '%(%(%#Ple7ffffff465faf00b# %{"MiniBufExplorer"} %)%#Pl465faf001c008700N#⮀%)%<%#Ple7ffffff1c008700N#%=', 's': '%(%(%#Ple7ffffff465faf00b# %{"MiniBufExplorer"} %)%#Pl465faf001c008700N#⮀%)%<%#Ple7ffffff1c008700N#%=', 'n': '%(%(%#Ple7ffffff465faf00b# %{"MiniBufExplorer"} %)%#Pl465faf001c008700N#⮀%)%<%#Ple7ffffff1c008700N#%=', 'v': '%(%(%#Ple7ffffff465faf00b# %{"MiniBufExplorer"} %)%#Pl465faf001c008700N#⮀%)%<%#Ple7ffffff1c008700N#%=', 'i': '%(%(%#Ple7ffffff465faf00b# %{"MiniBufExplorer"} %)%#Pl465faf001c008700N#⮀%)%<%#Ple7ffffff1c008700N#%=', 'N': '%(%(%#Pl465faf0016005f00b# %{"MiniBufExplorer"} %)%#Pl16005f0016005f00N#⮀%)%<%#Ple7ffffff16005f00N#%='}, 'matches': ['match', 'any', [['bufname(winbufnr(a:window))', '^\-MiniBufExplorer\-$']]]}, {'mode_statuslines': {'r': '%(%(%#Ple7fffffff0585858N# %{"Quickfix"} %)%#Plf0585858ec303030N#⮀%)%<%#Ple7ffffffec303030N#%=', 's': '%(%(%#Ple7fffffff0585858N# %{"Quickfix"} %)%#Plf0585858ec303030N#⮀%)%<%#Ple7ffffffec303030N#%=', 'n': '%(%(%#Ple7fffffff0585858N# %{"Quickfix"} %)%#Plf0585858ec303030N#⮀%)%<%#Ple7ffffffec303030N#%=', 'v': '%(%(%#Ple7fffffff0585858N# %{"Quickfix"} %)%#Plf0585858ec303030N#⮀%)%<%#Ple7ffffffec303030N#%=', 'i': '%(%(%#Ple7ffffff1f0087afN# %{"Quickfix"} %)%#Pl1f0087af18005f87N#⮀%)%<%#Ple7ffffff18005f87N#%=', 'N': '%(%(%#Plf58a8a8aeb262626N# %{"Quickfix"} %)%#Pleb262626e9121212N#⮀%)%<%#Ple7ffffffe9121212N#%='}, 'matches': ['match', 'any', [['getwinvar(a:window, "&ft")', '^qf$']]]}, {'mode_statuslines': {'r': '%(%(%#Ple7ffffff465faf00b# %{"Tagbar"} %)%#Pl465faf001c008700N#⮀%)%(%(%#Pl94afd7001c008700N# %{"Tree"} %)%#Pl1c0087001c008700N#⮀%)%<%#Ple7ffffff1c008700N#%=', 's': '%(%(%#Ple7ffffff465faf00b# %{"Tagbar"} %)%#Pl465faf001c008700N#⮀%)%(%(%#Pl94afd7001c008700N# %{"Tree"} %)%#Pl1c0087001c008700N#⮀%)%<%#Ple7ffffff1c008700N#%=', 'n': '%(%(%#Ple7ffffff465faf00b# %{"Tagbar"} %)%#Pl465faf001c008700N#⮀%)%(%(%#Pl94afd7001c008700N# %{"Tree"} %)%#Pl1c0087001c008700N#⮀%)%<%#Ple7ffffff1c008700N#%=', 'v': '%(%(%#Ple7ffffff465faf00b# %{"Tagbar"} %)%#Pl465faf001c008700N#⮀%)%(%(%#Pl94afd7001c008700N# %{"Tree"} %)%#Pl1c0087001c008700N#⮀%)%<%#Ple7ffffff1c008700N#%=', 'i': '%(%(%#Ple7ffffff465faf00b# %{"Tagbar"} %)%#Pl465faf001c008700N#⮀%)%(%(%#Pl94afd7001c008700N# %{"Tree"} %)%#Pl1c0087001c008700N#⮀%)%<%#Ple7ffffff1c008700N#%=', 'N': '%(%(%#Pl465faf0016005f00b# %{"Tagbar"} %)%#Pl465faf0016005f00b#⮁%)%(%(%#Pl465faf0016005f00N# %{"Tree"} %)%#Pl16005f0016005f00N#⮀%)%<%#Ple7ffffff16005f00N#%='}, 'matches': ['match', 'any', [['getwinvar(a:window, "&ft")', '^tagbar$']]]}, {'mode_statuslines': {'r': '%(%(%#Ple7ffffff465faf00b# %{Powerline#Functions#GetShortPath(4)} %)%#Pl465faf001c008700N#⮀%)%<%#Ple7ffffff1c008700N#%=', 's': '%(%(%#Ple7ffffff465faf00b# %{Powerline#Functions#GetShortPath(4)} %)%#Pl465faf001c008700N#⮀%)%<%#Ple7ffffff1c008700N#%=', 'n': '%(%(%#Ple7ffffff465faf00b# %{Powerline#Functions#GetShortPath(4)} %)%#Pl465faf001c008700N#⮀%)%<%#Ple7ffffff1c008700N#%=', 'v': '%(%(%#Ple7ffffff465faf00b# %{Powerline#Functions#GetShortPath(4)} %)%#Pl465faf001c008700N#⮀%)%<%#Ple7ffffff1c008700N#%=', 'i': '%(%(%#Ple7ffffff465faf00b# %{Powerline#Functions#GetShortPath(4)} %)%#Pl465faf001c008700N#⮀%)%<%#Ple7ffffff1c008700N#%=', 'N': '%(%(%#Pl465faf0016005f00b# %{Powerline#Functions#GetShortPath(4)} %)%#Pl16005f0016005f00N#⮀%)%<%#Ple7ffffff16005f00N#%='}, 'matches': ['match', 'any', [['getwinvar(a:window, "&ft")', '^nerdtree$']]]}]
+loaded_matchparen     #1
+acp_behaviorRubyOmniMethodLength #0
+NERDTreeChDirMode      0
+EclimRefactorDiffOrientation  vertical
+EasyMotion_do_shade   #1
+ConqueTerm_CloseOnEnd #0
+ConqueTerm_InsertCharPre #0
+Powerline_symbols      fancy
+loaded_neocomplcache_dictionary_complete #1
+FUNCREF_TYPE          #2
+acp_behavior          {'xhtml': [{'meets': 'acp#meetsForSnipmate', 'completefunc': 'acp#completeSnipmate', 'onPopupClose': 'acp#onPopupCloseSnipmate', 'repeat': 0, 'command': '^X^U'}, {'meets': 'acp#meetsForKeyword', 'repeat': 0, 'command': '^N'}, {'meets': 'acp#meetsForFile', 'repeat': 1, 'command': '^X^F'}, {'meets': 'acp#meetsForHtmlOmni', 'repeat': 1, 'command': '^X^O'}], 'perl': [{'meets': 'acp#meetsForSnipmate', 'completefunc': 'acp#completeSnipmate', 'onPopupClose': 'acp#onPopupCloseSnipmate', 'repeat': 0, 'command': '^X^U'}, {'meets': 'acp#meetsForKeyword', 'repeat': 0, 'command': '^N'}, {'meets': 'acp#meetsForFile', 'repeat': 1, 'command': '^X^F'}, {'meets': 'acp#meetsForPerlOmni', 'repeat': 0, 'command': '^X^O'}], 'xml': [{'meets': 'acp#meetsForSnipmate', 'completefunc': 'acp#completeSnipmate', 'onPopupClose': 'acp#onPopupCloseSnipmate', 'repeat': 0, 'command': '^X^U'}, {'meets': 'acp#meetsForKeyword', 'repeat': 0, 'command': '^N'}, {'meets': 'acp#meetsForFile', 'repeat': 1, 'command': '^X^F'}, {'meets': 'acp#meetsForXmlOmni', 'repeat': 1, 'command': '^X^O'}], 'html': [{'meets': 'acp#meetsForSnipmate', 'completefunc': 'acp#completeSnipmate', 'onPopupClose': 'acp#onPopupCloseSnipmate', 'repeat': 0, 'command': '^X^U'}, {'meets': 'acp#meetsForKeyword', 'repeat': 0, 'command': '^N'}, {'meets': 'acp#meetsForFile', 'repeat': 1, 'command': '^X^F'}, {'meets': 'acp#meetsForHtmlOmni', 'repeat': 1, 'command': '^X^O'}], '*': [{'meets': 'acp#meetsForSnipmate', 'completefunc': 'acp#completeSnipmate', 'onPopupClose': 'acp#onPopupCloseSnipmate', 'repeat': 0, 'command': '^X^U'}, {'meets': 'acp#meetsForKeyword', 'repeat': 0, 'command': '^N'}, {'meets': 'acp#meetsForFile', 'repeat': 1, 'command': '^X^F'}], 'ruby': [{'meets': 'acp#meetsForSnipmate', 'completefunc': 'acp#completeSnipmate', 'onPopupClose': 'acp#onPopupCloseSnipmate', 'repeat': 0, 'command': '^X^U'}, {'meets': 'acp#meetsForKeyword', 'repeat': 0, 'command': '^N'}, {'meets': 'acp#meetsForFile', 'repeat': 1, 'command': '^X^F'}, {'meets': 'acp#meetsForRubyOmni', 'repeat': 0, 'command': '^X^O'}], 'python': [{'meets': 'acp#meetsForSnipmate', 'completefunc': 'acp#completeSnipmate', 'onPopupClose': 'acp#onPopupCloseSnipmate', 'repeat': 0, 'command': '^X^U'}, {'meets': 'acp#meetsForKeyword', 'repeat': 0, 'command': '^N'}, {'meets': 'acp#meetsForFile', 'repeat': 1, 'command': '^X^F'}, {'meets': 'acp#meetsForPythonOmni', 'repeat': 0, 'command': '^X^O'}], 'css': [{'meets': 'acp#meetsForSnipmate', 'completefunc': 'acp#completeSnipmate', 'onPopupClose': 'acp#onPopupCloseSnipmate', 'repeat': 0, 'command': '^X^U'}, {'meets': 'acp#meetsForKeyword', 'repeat': 0, 'command': '^N'}, {'meets': 'acp#meetsForFile', 'repeat': 1, 'command': '^X^F'}, {'meets': 'acp#meetsForCssOmni', 'repeat': 0, 'command': '^X^O'}]}
+tagbar_map_hidenonpublic  v
+ConqueTerm_CodePage   #0
+EasyMotion_grouping   #1
+XPT#let_sid            map <Plug>xsid <SID>|let s:sid=matchstr(maparg("<Plug>xsid"), "\\d\\+_")|unmap <Plug>xsid
+loaded_neocomplcache  #1
+Powerline_cache_revision #7
+__XPT_DEBUG_VIM__     #2
+EclimBuffersSortDirection  asc
+NERDTreeShowFiles      1
+XPTmappings           {'incSelTrigger': '<C-c>`>a<C-r>=XPTemplateStart(0)<cr>', 'selTrigger': '<C-c>`>a<C-r>=XPTemplateStart(0,{''k'':''%s''})<cr>', 'excSelTrigger': '<C-c>`>i<C-r>=XPTemplateStart(0)<cr>', 'trigger_old': '<C-v><C-v><BS><C-r>=XPTemplateStart(0)<cr>', 'popup_old': '<C-v><C-v><BS><C-r>=XPTemplateStart(0,{''popupOnly'':1})<cr>', 'force_pum': '<C-r>=XPTemplateStart(0,{''k'':''%s'',''forcePum'':1})<cr>', 'trigger': '<C-r>=XPTemplateStart(0,{''k'':''%s''})<cr>', 'popup': '<C-r>=XPTemplateStart(0,{''k'':''%s'',''popupOnly'':1})<cr>', 'wrapTrigger': '"0s<C-r>=XPTemplatePreWrap(@0)<cr>'}
+neocomplcache_lock_buffer_name_pattern  
+xptemplate_ph_pum_accept_empty #1
+Powerline_symbols_override {}
+EclimBaseDir           /Users/lvfm/.vim
+neocomplcache_temporary_dir  /Users/lvfm/.neocon
+EclimUserSignHighlight  Statement
+neocomplcache_lock_iminsert #0
+EclimLargeFileSize    #5
+xpm_changenr_level    #1000
+loaded_neocomplcache_tags_complete #1
+ConqueTerm_StartMessages #0
+ConqueTerm_ReadUnfocused #1
+NERDTreeCaseSensitiveSort  0
+ft_ignore_pat          \.\(Z\|gz\|bz2\|zip\|tgz\)$
+SettingSwitch         {'Add': function('<SNR>79_Add'), '__init__': function('<SNR>79_New'), 'Switch': function('<SNR>79_Switch'), 'AddList': function('<SNR>79_AddList'), 'Restore': function('<SNR>79_Restore'), 'New': function('XPT#classNew')}
+NERDTreeHijackNetrw    1
+XPT#BUILT             #1
+EclimProjectTreeSharedInstance #1
+acp_enableAtStartup   #1
+NERDTreeShowLineNumbers  0
+EclimUserSignText      #
+EasyMotion_mapping_j   ,,j
+NERDTreeMapPreviewVSplit  gs
+EmptyFilter           {}
+loaded_neocomplcache_buffer_complete #1
+ackprg                 ack -H --nocolor --nogroup --column
+neocomplcache_enable_underbar_completion #1
+EasyMotion_hl_group_shade  EasyMotionShade
+tagbar_autofocus      #0
+MRU_Max_Menu_Entries  #10
+NERDTreeHighlightCursorline  1
+maplocalleader         ,
+XPT#importConst        let s:escapeHead     = XPT#escapeHead | let s:unescapeHead   = XPT#unescapeHead | let s:nonEscaped     = XPT#nonEscaped | let s:regEval        = XPT#regEval | let s:nonsafe        = XPT#nonsafe | let s:nonsafeHint    = XPT#nonsafeHint | let s:nullDict       = XPT#nullDict | let s:nullList       = XPT#nullList | let s:item_var       = XPT#item_var   | let s:item_qvar      = XPT#item_qvar  | let s:item_func      = XPT#item_func  | let s:item_qfunc     = XPT#item_qfunc | let s:ptnIncFull     = XPT#ptnIncFull | let s:ptnIncSimp     = XPT#ptnIncSimp | let s:ptnRepetition  = XPT#ptnRepetition | let s:ptnPreEvalFunc = XPT#ptnPreEvalFunc | let s:DONE           = XPT#DONE | let s:UNDONE         = XPT#UNDONE | let s:GOON           = XPT#GOON | let s:AGAIN          = XPT#AGAIN | let s:BROKEN         = XPT#BROKEN | let s:BUILT          = XPT#BUILT | let s:NOTBUILT       = XPT#NOTBUILT | let s:R_NEXT = 0x008 | let s:R_OUT  = 0x009 | let s:R_     = 0x00A | let s:R_FOO  = 0x00B | let s:G_CRESTED   = 0x010 | let s:G_INITED    = 0x020 | let s:G_PROCESSED = 0x030 | let s:G_REFOCUSED = 0x040 | 
+EasyMotion_mapping_n   ,,n
+acp_behaviorFileLength #0
+tagbar_map_help        <F1>
+EasyMotion_mapping_B   ,,B
+neocomplcache_source_completion_length {}
+EasyMotion_mapping_F   ,,F
+tagbar_map_previewwin  P
+acp_behaviorCssOmniValueLength #0
+tagbar_iconchars      ['▶', '▼']
+EasyMotion_mapping_N   ,,N
+Powerline_stl_path_style  relative
+EclimProjectTreeAutoOpen #0
+XPT#skipPattern        synIDattr(synID(line("."), col("."), 0), "name") =~? "\\vstring|comment"
+EasyMotion_mapping_T   ,,T
+tagbar_hide_nonpublic #0
+EasyMotion_mapping_W   ,,W
+xptemplate_close_pum  #0
+FiletypeScope         {'SetSnippetLoaded': function('<SNR>75_SetSnippetLoaded'), '__init__': function('<SNR>75_New'), 'IsSnippetLoaded': function('<SNR>75_IsSnippetLoaded'), 'CheckAndSetSnippetLoaded': function('<SNR>75_CheckAndSetSnippetLoaded'), 'New': function('XPT#classNew')}
+ConqueTerm_ExecFileKey  <F11>
+ack_apply_lmappings   #1
+EasyMotion_mapping_b   ,,b
+EclimOnlyExclude       ^NONE$
+EasyMotion_mapping_e   ,,e
+EasyMotion_mapping_f   ,,f
+neocomplcache_enable_cursor_hold_i #0
+ConqueTerm_InsertOnEnter #1
+tlib_debug            #0
+neocomplcache_caching_limit_file_size #500000
+EasyMotion_mapping_k   ,,k
+NERDTreeDirNode       {'activate': function('310'), 'getChildIndex': function('319'), 'renderToString': function('122'), 'reveal': function('334'), 'refresh': function('333'), 'GetRootLineNum': function('109'), 'openInNewTab': function('329'), 'getVisibleChildCount': function('321'), 'transplantChild': function('338'), 'getVisibleChildren': function('322'), 'GetRootForTab': function('108'), 'addChild': function('311'), '_openRecursively2': function('332'), 'close': function('312'), 'delete': function('101'), '_renderToString': function('123'), 'openSplit': function('116'), 'hasVisibleChildren': function('323'), 'findOpenDirSiblingWithVisibleChildren': function('105'), 'openExplorer': function('328'), 'sortChildren': function('336'), 'AbsoluteTreeRoot': function('309'), 'getLineNum': function('107'), 'bookmark': function('97'), 'openVSplit': function('117'), 'isVisible': function('111'), 'copy': function('100'), 'GetSelected': function('320'), 'isRoot': function('112'), 'openAlong': function('327'), 'rename': function('121'), 'displayString': function('102'), 'cacheParent': function('98'), 'getChildByIndex': function('318'), 'findNode': function('315'), 'New': function('325'), 'removeChild': function('335'), '_initChildren': function('324'), 'getChild': function('317'), 'openRecursively': function('331'), 'toggleOpen': function('337'), 'equals': function('103'), '_openInNewTab': function('330'), 'clearBookmarks': function('99'), 'open': function('326'), 'makeRoot': function('113'), 'findSibling': function('106'), 'closeChildren': function('313'), 'putCursorHere': function('119'), 'createChild': function('314'), 'getChildCount': function('316')}
+tagbar_map_closeallfolds ['=', 'zM']
+EasyMotion_mapping_w   ,,w
+NERDTreeMapCWD         CD
+EasyMotion_mapping_t   ,,t
+MRU_File               /Users/lvfm/.vim_mru_files
+XPT#UNDONE            #512
+EclimMakeQfFilter     #1
+__FILTERVALUE_VIM__   #2
+xpm_mark_nextline      l
+snipmgr_version        1.2
+tagbar_zoomwidth      #1
+NERDTreeMapOpenInTab   t
+DICT_TYPE             #4
+XPT#ptnRepetition      \V\^\w\*...\w\*\$
+CommandTCancelMap     ['<C-c>', '<Esc>']
+NERDChristmasTree     #1
+xptemplate_break_undo #0
+NERDTreeMapUpdir       u
+neocomplcache_auto_completion_start_length #2
+syntax_on             #1
+XPT#ver               #2
+xptemplate_cwd_snippet #0
+loaded_tagbar         #1
+loaded_delimitMate    #1
+tagbar_map_togglesort  s
+loaded_dash           #1
+xptemplate_key_pum_only  <C-r><C-r><C-\>
+tlib_inputlist_livesearch_threshold #1000
+MRU_Max_Submenu_Entries #10
+loaded_netrwPlugin     v140
+loaded_gzip           #1
+XPT#GOON              #768
+acp_behaviorKeywordIgnores []
+XPT#BROKEN            #-1
+xpt_post_action        
+XPT#nonEscaped         \%(\%(\[^\\]\|\^\)\%(\\\\\)\*\)\@<=
+xptemplate_to_right    <C-l>
+NERDTreeMapChdir       cd
+XPT_RC                {'canceled': {}, 'ok': {}, 'POST': {'unchanged': {}, 'keepIndent': {}}}
+loaded_godoc          #1
+tlib_tags_extra        
+tagbar_map_nexttag     <C-N>
+Tlist_Exit_OnlyWindow #1
+neocomplcache_enable_fuzzy_completion #0
+neocomplcache_enable_ignore_case #1
+NERDTreeMapToggleZoom  A
+ack_apply_qmappings   #1
+loaded_neocomplcache_syntax_complete #1
+neocomplcache_compare_function  neocomplcache#compare_rank
+neocomplcache_enable_auto_delimiter #0
+EclimMenus            #1
+EclimJavaSyntasticEnabled #0
+EclimProjectTreeTitle  ProjectTree_
+tagbar_foldlevel      #99
+NERDTreeMapRefreshRoot  R
+EclimProjectTreeExpandPathOnOpen #0
+xptemplate_nav_cancel  <cr>
+MRU_Window_Height     #8
+xpm_mark               p
+xpt#snipfunction#funcs {'Call': function('426'), 'GetVar': function('425')}
+EasyMotion_loaded     #1
+tlib_inputlist_pct    #50
+did_optwin_syntax_inits #1
+neocomplcache_enable_insert_char_pre #0
+mapleader              ,
+go_godoc_commands     #1
+NERDTreeAutoCenter     1
+xptemplate_key_2       <C-\>
+EclimJavaValidate     #1
+ConqueTerm_ToggleKey   <F8>
+EclimSeparator         /
+EclimWarningHighlight  WarningMsg
+tagbar_ctags_bin       /usr/local/bin/ctags
+tlib_filename_sep      /
+tagbar_systemenc       utf-8
+EclimOnlyExcludeFixed #1
+NERDTreeMapOpenVSplit  s
+ruby_minlines         #50
+neocomplcache_enable_auto_select #0
+__FILETYPESCOPE_VIM__ #2
+tagbar_expand         #0
+tagbar_autopreview    #0
+neocomplcache_ctags_program  ctags
+XPT#item_func          \V\w\+(\.\*)
+tagbar_map_openallfolds ['*', '<kMultiply>', 'zR']
+tlib_pick_last_item   #1
+globalStack           []
+Tlist_WinWidth        #28
+NERDTreeBookmark      {'CacheBookmarks': function('190'), 'BookmarkNames': function('189'), 'openInNewTab': function('201'), 'activate': function('184'), 'open': function('200'), 'delete': function('193'), 'validate': function('207'), 'ToRoot': function('206'), 'New': function('199'), 'compareTo': function('191'), 'Bookmarks': function('186'), 'ClearAll': function('192'), 'InvalidBookmarks': function('197'), 'AddBookmark': function('185'), 'getNode': function('194'), 'toRoot': function('205'), 'str': function('204'), 'BookmarkFor': function('188'), 'Sort': function('203'), 'mustExist': function('198'), 'BookmarkExistsFor': function('187'), 'GetNodeForName': function('195'), 'GetSelected': function('196'), 'Write': function('208'), 'setPath': function('202')}
+neocomplcache_max_keyword_width #50
+xptemplate_strip_left #1
+snips_author           Me
+tlib_sortprefs_threshold #200
+tagbar_compact        #1
+NERDTreeMapDeleteBookmark  D
+neocomplcache_force_overwrite_completefunc #0
+acp_behaviorKeywordLength #2
+neocomplcache_fuzzy_completion_start_length #3
+XPT#unescapeHead       \v(\\*)\1\\?\V
+MRU_Auto_Close        #1
+NERDTreeMenuController {'_echoPrompt': function('238'), '_cursorDown': function('246'), 'showMenu': function('237'), '_setCmdheight': function('243'), '_nextIndexFor': function('242'), '_allIndexesFor': function('241'), '_cursorUp': function('247'), '_saveOptions': function('244'), '_current': function('239'), '_handleKeypress': function('240'), 'New': function('236'), '_restoreOptions': function('245')}
+neocomplcache_release_cache_time #900
+loaded_autoload_acp   #1
+acp_mappingDriven     #0
+EclimShowLoclistSigns #1
+NERDTreeMapJumpNextSibling  <C-j>
+Tlist_File_Fold_Auto_Close #1
+EclimLocationListHeight #10
+ctrlp_status_func     {'prog': 'PowerlineStatuslineCallback_ctrlp_prog', 'main': 'PowerlineStatuslineCallback_ctrlp_main'}
+did_load_ftplugin     #1
+XPT#item_qfunc         \V{\w\+(\.\*)}
+EclimProjectKeepLocalHistory #0
+xptemplate_key         <C-\>
+NERDTreeAutoCenterThreshold  3
+NERDTreeMapJumpRoot    P
+EclimTempFilesEnable  #1
+XPT#escapeHead         \v(\\*)\V
+CommandTAcceptSelectionSplitMap  <C-x>
+NERDTreeCopyCmd        cp -r 
+ConqueTerm_SendVisKey  <F9>
+tlib_numeric_chars    {'185': 176, '180': 176, '176': 176, '177': 176, '178': 176, '179': 176, '182': 176, '183': 176, '181': 176, '184': 176}
+xptemplate_minimal_prefix_nested #1
+acp_ignorecaseOption  #1
+neocomplcache_enable_debug #0
+NERDTreeMapQuit        q
+Tlist_Auto_Open       #0
+MRU_Window_Open_Always #0
+xptemplate_fallback    <Plug>XPTrawKey
+NERDTreeMapChangeRoot  C
+ConqueTerm_SessionSupport #0
+__AL_XPT_MSVR_VIM__   #2
+__XPOPUP_VIM__        #2
+xptemplate_strict     #2
+did_indent_on         #1
+EclimJavaSetCommonOptions #1
+EasyMotion_leader_key  ,,
+__SETTINGSWITCH_VIM__ #2
+loaded_nerdtree_exec_menuitem #1
+neocomplcache_enable_wildcard #1
+NERDTreeSortDirs       1
+XPT#ptnIncFull         \V\^Include:\zs\(\.\{-}\)\$
+ConqueTerm_TERM        xterm
+NERDTreeMapOpenSplit   i
+tagbar_width          #25
+EclimProjectProblemsUpdateOnSave #1
+EclimDefaultFileOpenAction  split
+EclimTempDir           /tmp
+tagbar_map_showproto   <Space>
+ConqueTerm_CWInsert   #0
+acp_behaviorPythonOmniLength #0
+ConqueTerm_Idx        #0
+neocomplcache_wildcard_characters {'_': '*'}
+CommandTMatchWindowAtTop #0
+tagbar_show_visibility #1
+ConqueTerm_PromptRegex  ^\w\+@[0-9A-Za-z_.-]\+:[0-9A-Za-z_./\~,:-]\+\$
+EclimLargeFileEnabled #0
+EclimShowCurrentErrorBalloon #1
+EasyMotion_mapping_ge  ,,ge
+XPT#priorities        {'all': 192, 'lang': 96, 'spec': 160, 'sub': 64, 'like': 128, 'personal': 32}
+NERDTreeMapOpenExpl    e
+XPT#item_qvar          \V{$\w\+}
+command_t_loaded      #1
+NERDTreeMapJumpFirstChild  K
+xptemplate_bundle      
+Tlist_Use_Right_Window #1
+loaded_tcomment       #208
+loaded_nerd_tree      #1
+XPTemplateSettingPrototype {'hidden': 0, 'mappings': {}, 'ontypeFilters': {}, 'variables': {}, 'defaultValues': {}, 'preValues': {'cursor': {'__class__': {'AdjustTextAction': function('<SNR>77_AdjustTextAction'), '__init__': function('<SNR>77_New'), 'AdjustIndent': function('<SNR>77_AdjustIndent'), 'New': function('XPT#classNew')}, 'toBuild': 0, 'nIndent': 0, 'New': function('XPT#classNew'), 'marks': 'innerMarks', '__init__': function('<SNR>77_New'), 'AdjustIndent': function('<SNR>77_AdjustIndent'), 'rc': 1, 'text': '$CURSOR_PH', 'AdjustTextAction': function('<SNR>77_AdjustTextAction'), 'force': 0}}, 'comeLast': [], 'comeFirst': [], 'postFilters': {}}
+Powerline_colorscheme  default
+XPMpreferRight         r
+tlib_inputlist_match   cnfx
+EclimBuffersSort       file
+neocomplcache_disabled_sources_list {}
+neocomplcache_manual_completion_start_length #0
+NERDTreeMapOpenRecursively  O
+opt                    zoomwidth
+EclimQuote             ['"]
+NERDTreeMapToggleBookmarks  B
+acp_behaviorRubyOmniSymbolLength #1
+tagbar_autoshowtag    #0
+tcommentMapLeader1     <c-_>
+tcommentMapLeader2     <Leader>_
+tagbar_autoclose      #0
+xptemplate_minimal_prefix #1
+tlib_handlers_EditList [{'help': 'Edit item', 'agent': 'tlib#agent#EditItem', 'key': 5, 'key_name': '<c-e>'}, {'help': 'Delete item(s)', 'agent': 'tlib#agent#DeleteItems', 'key': 4, 'key_name': '<c-d>'}, {'help': 'New item', 'agent': 'tlib#agent#NewItem', 'key': 14, 'key_name': '<c-n>'}, {'help': 'Cut item(s)', 'agent': 'tlib#agent#Cut', 'key': 24, 'key_name': '<c-x>'}, {'help': 'Copy item(s)', 'agent': 'tlib#agent#Copy', 'key': 3, 'key_name': '<c-c>'}, {'help': 'Paste item(s)', 'agent': 'tlib#agent#Paste', 'key': 22, 'key_name': '<c-v>'}, {'pick_last_item': 0}, {'return_agent': 'tlib#agent#EditReturnValue'}, {'help_extra': ['Submit changes by pressing ENTER or <c-s> or <c-w><cr>', 'Cancel editing by pressing <c-w>c']}]
+NERDTreeBookmarksFile  /Users/lvfm/.NERDTreeBookmarks
+EasyMotion_mapping_gE  ,,gE
+EclimFileTypeValidate #1
+xptemplate_goback      <C-g>
+NERDTreeBookmarks     []
+__XPREPLACE_VIM__     #2
+acp_completeoptPreview #0
+ConqueTerm_Loaded     #1
+tagbar_map_close       q
+ConqueTerm_Syntax      conque_term
+NERDTreeMapUpdirKeepOpen  U
+tagbar_map_zoomwin     x
+NERDTreeInvalidBookmarks []
+NERDTreeQuitOnOpen     0
+EclimShowCurrentError #1
+__DEBUG_VIM__         #2
+FilterValue           {'AdjustTextAction': function('<SNR>77_AdjustTextAction'), '__init__': function('<SNR>77_New'), 'AdjustIndent': function('<SNR>77_AdjustIndent'), 'New': function('XPT#classNew')}
+loaded_pathogen       #1
+tlib_inputlist_not     -
+neocomplcache_max_list #100
+neocomplcache_source_rank {}
+acp_completeOption     .,w,b,k
+__AL_XPT_EVALSUPPORT_f67523jhrk #1
+neocomplcache_cursor_hold_i_time #300
+tagbar_map_preview     p
+tagbar_sort           #1
+XPTpvs                {}
+JavaSrcPaths           /Users/lvfm/work/program/java/src-jdk/
+Powerline_cache_file   /Users/lvfm/.vim/bundle/vim-powerline/Powerline_default_default_fancy.cache
+b:_xpmark             {'handleUndoRedo': function('<SNR>84_handleUndoRedo'), 'ToChangeNr': function('<SNR>84_ToChangeNr'), 'findLikelyRange': function('<SNR>84_findLikelyRange'), 'removeMark': function('<SNR>84_removeMark'), 'updateWithNewChangeRange': function('<SNR>84_updateWithNewChangeRange'), 'addMarkOrder': function('<SNR>84_addMarkOrder'), 'saveCurrentStat': function('<SNR>84_saveCurrentStat'), 'stat': {}, 'updateForLinewiseDeletion': function('<SNR>84_updateForLinewiseDeletion'), 'compare': function('<SNR>84_compare'), 'updateMarksAfterLine': function('<SNR>84_updateMarksAfterLine'), 'orderedMarks': [], 'markHistory': {'0': {'list': [...], 'likely': {'end': '', 'start': ''}, 'dict': {}}}, 'updateMarksAfter': function('<SNR>84_updateMarksAfter'), 'isUpdateNeeded': function('<SNR>84_isUpdateNeeded'), 'insertModeUpdate': function('<SNR>84_insertModeUpdate'), 'marks': {...}, 'updateMarks': function('<SNR>84_updateMarks'), 'saveCurrentCursorStat': function('<SNR>84_saveCurrentCursorStat'), 'updateMarksBefore': function('<SNR>84_updateMarksBefore'), 'snapshot': function('<SNR>84_snapshot'), 'normalModeUpdate': function('<SNR>84_normalModeUpdate'), 'changeLikelyBetween': {...}, 'changenrRange': [0, 0], 'lastMode': 'n', 'updateStrategy': 'auto', 'lastPositionAndLength': [1, 1, 28], 'lastChangenr': 0, 'initCurrentStat': function('<SNR>84_initCurrentStat'), 'lastTotalLine': 121}
+b:_xpeval             {'evalCache': {}, 'strMaskCache': {}}
+b:xptemplateData      {'posStack': [], 'keywordList': [], 'settingWrap': {'__class__': {'Add': function('<SNR>79_Add'), '__init__': function('<SNR>79_New'), 'Switch': function('<SNR>79_Switch'), 'AddList': function('<SNR>79_AddList'), 'Restore': function('<SNR>79_Restore'), 'New': function('XPT#classNew')}, 'Add': function('<SNR>79_Add'), 'saved': [], 'settings': [['&l:wrap', '1']], 'Switch': function('<SNR>79_Switch'), 'AddList': function('<SNR>79_AddList'), '__init__': function('<SNR>79_New'), 'Restore': function('<SNR>79_Restore'), 'New': function('XPT#classNew')}, 'fallbacks': [], 'settingSwitch': {'__class__': {...}, 'Add': function('<SNR>79_Add'), 'saved': [], 'settings': [['&l:textwidth', '0'], ['&l:lazyredraw', '1'], ['&l:indentkeys', {'exe': 'setl indentkeys-=*<Return>'}], ['&l:cinkeys', {'exe': 'setl cinkeys-=*<Return>'}]], 'Switch': function('<SNR>79_Switch'), 'AddList': function('<SNR>79_AddList'), '__init__': function('<SNR>79_New'), 'Restore': function('<SNR>79_Restore'), 'New': function('XPT#classNew')}, 'wrap': '', 'wrapStartPos': 0, 'savedReg': '', 'stack': [], 'snipFileScopeStack': [], 'snipFileScope': {}, 'keyword': '\w', 'snippetToParse': [], 'abbrPrefix': {}, 'filetypes': {}, 'renderContext': {'action': '', 'namedStep': {}, 'oriIndentkeys': {}, 'snipObject': {}, 'wrap': {}, 'SwitchPhase': function('<SNR>78_SwitchPhase'), 'snipSetting': {}, 'leadingCharToReindent': {')': 1, '{': 1, '}': 1}, '__class__': {'SwitchPhase': function('<SNR>78_SwitchPhase'), '__init__': function('<SNR>78_New'), 'New': function('XPT#classNew')}, 'evalContext': {}, 'leadingPlaceHolder': {}, 'item': {}, 'ftScope': {}, 'processing': 0, 'marks': {'tmpl': {'end': 'X0_`tmpl`e', 'start': 'X0_`tmpl`s'}}, 'activeLeaderMarks': 'innerMarks', '__init__': function('<SNR>78_New'), 'itemDict': {}, 'New': function('XPT#classNew'), 'tmpmappings': {}, 'level': 0, 'phase': 'uninit', 'history': [], 'lastContent': '', 'markNamePre': 'X0_', 'itemList': []}}
+b:_l_delimitMate_quotes_list ['"', '''', '`']
+b:current_syntax       scala
+b:mapSaver            {'saved': [], 'keys': [['i', '<Tab>'], ['s', '<Tab>'], ['i', '<S-Tab>'], ['s', '<S-Tab>'], ['s', '<cr>'], ['s', '<C-l>'], ['n', '<C-g>'], ['i', '<C-g>'], ['i', '<CR>'], ['s', '<DEL>'], ['s', '<BS>']]}
+b:_l_delimitMate_apostrophes_list []
+b:_l_delimitMate_smart_matchpairs  ^\%(\w\|\!\|£\|\$\|_\|["']\s*\S\)
+b:vm_guibg             red
+b:_l_delimitMate_apostrophes  
+b:_l_delimitMate_excluded_ft  
+b:_l_delimitMate_excluded_regions_enabled #1
+b:_l_delimitMate_tab2exit #1
+b:_l_delimitMate_expand_space #0
+b:_l_delimitMate_nesting_quotes []
+b:did_indent          #1
+b:vm_availablemarks   ['VMarkColor0', 'VMarkColor1', 'VMarkColor2', 'VMarkColor3', 'VMarkColor4', 'VMarkColor5', 'VMarkColor6', 'VMarkColor7', 'VMarkColor8', 'VMarkColor9', 'VMarkColor10', 'VMarkColor11', 'VMarkColor12', 'VMarkColor13', 'VMarkColor14', 'VMarkColor15', 'VMarkColor16', 'VMarkColor17', 'VMarkColor18', 'VMarkColor19', 'VMarkColor20', 'VMarkColor21', 'VMarkColor22', 'VMarkColor23', 'VMarkColor24', 'VMarkColor25', 'VMarkColor26', 'VMarkColor27', 'VMarkColor28', 'VMarkColor29', 'VMarkColor30', 'VMarkColor31', 'VMarkColor32', 'VMarkColor33', 'VMarkColor34', 'VMarkColor35', 'VMarkColor36', 'VMarkColor37', 'VMarkColor38', 'VMarkColor39', 'VMarkColor40', 'VMarkColor41', 'VMarkColor42', 'VMarkColor43', 'VMarkColor44', 'VMarkColor45', 'VMarkColor46', 'VMarkColor47', 'VMarkColor48', 'VMarkColor49']
+b:eclim_tab_id        #1
+b:vm_linecolormapping {}
+b:_xptSnipCache       {'pumCache': {}, 'conditions': []}
+b:vm_ctermfg           black
+b:_l_delimitMate_autoclose #1
+b:_l_delimitMate_balance_matchpairs #0
+b:_l_delimitMate_right_delims [')', '}', ']']
+b:_l_delimitMate_left_delims ['(', '{', '[']
+b:mapLiteral          {'saved': [], 'keys': [['s', 'a'], ['s', 'b'], ['s', 'c'], ['s', 'd'], ['s', 'e'], ['s', 'f'], ['s', 'g'], ['s', 'h'], ['s', 'i'], ['s', 'j'], ['s', 'k'], ['s', 'l'], ['s', 'm'], ['s', 'n'], ['s', 'o'], ['s', 'p'], ['s', 'q'], ['s', 'r'], ['s', 's'], ['s', 't'], ['s', 'u'], ['s', 'v'], ['s', 'w'], ['s', 'x'], ['s', 'y'], ['s', 'z'], ['s', 'A'], ['s', 'B'], ['s', 'C'], ['s', 'D'], ['s', 'E'], ['s', 'F'], ['s', 'G'], ['s', 'H'], ['s', 'I'], ['s', 'J'], ['s', 'K'], ['s', 'L'], ['s', 'M'], ['s', 'N'], ['s', 'O'], ['s', 'P'], ['s', 'Q'], ['s', 'R'], ['s', 'S'], ['s', 'T'], ['s', 'U'], ['s', 'V'], ['s', 'W'], ['s', 'X'], ['s', 'Y'], ['s', 'Z'], ['s', '1'], ['s', '2'], ['s', '3'], ['s', '4'], ['s', '5'], ['s', '6'], ['s', '7'], ['s', '8'], ['s', '9'], ['s', '0'], ['s', '!'], ['s', '@'], ['s', '#'], ['s', '$'], ['s', '%'], ['s', '^'], ['s', '&'], ['s', '*'], ['s', '('], ['s', ')'], ['s', '`'], ['s', '~'], ['s', '-'], ['s', '_'], ['s', '='], ['s', '+'], ['s', '['], ['s', '{'], ['s', ']'], ['s', '}'], ['s', '\'], ['s', ';'], ['s', ':'], ['s', '"'], ['s', ''''], ['s', ','], ['s', '<'], ['s', '.'], ['s', '>'], ['s', '/'], ['s', '?'], ['s', '<SPACE>'], ['s', '\|']]}
+b:_l_delimitMate_quotes  " ' `
+b:_l_delimitMate_excluded_regions_list ['Comment']
+b:_l_delimitMate_excluded_regions  Comment
+b:vm_markedlines      []
+b:_l_delimitMate_smart_quotes #1
+b:_l_delimitMate_expand_cr #0
+b:delimitMate_enabled #1
+b:vm_guifg             white
+b:Powerline_filepath   src/multi-jvm/scala/sample/cluster/stats/
+b:_l_delimitMate_eol_marker  
+b:delimitMate_was_here #1
+b:vm_maxmarks         #50
+b:loaded              [1, 1, 1, 0]
+b:Powerline_cwd        /Users/lvfm/work/program/opensource/akka/akka-samples/akka-sample-cluster-java
+b:_l_delimitMate_matchpairs_list [['(', ')'], ['{', '}'], ['[', ']']]
+b:_l_delimitMate_matchpairs  (:),{:},[:]
+b:vm_ctermbg           yellow
+b:vm_colorprefix       VMarkColor
+b:_xpm_compare        *XPTmarkCompare()
+b:_l_delimitMate_buffer []
+b:changedtick         #8
+w:paren_hl_on         #0
+t:NERDTreeBufName      NERD_tree_1
+t:eclim_tab_id        #1
+v:version             #703
+v:beval_winnr         #0
+v:lnum                #0
+v:scrollstart          Unknown
+v:oldfiles            ['~/work/program/java/onepush/onepush-api/src/routing/pom.xml', '~/work/program/java/onepush/onepush-api/src/routing/NERD_tree_1', '~/work/program/java/onepush/onepush-api/src/routing/src/main/java/com/yahoo/onepush/routing/cache/Cachable.java', '~/work/program/java/onepush/onepush-api/src/routing/src/main/java/com/yahoo/onepush/routing/handler/FanoutHandler.java', '~/work/program/java/onepush/onepush-api/src/routing/src/main/java/com/yahoo/onepush/routing/handler/ChannelAttributesHandler.java', '~/work/program/java/onepush/onepush-api/src/routing/src/main/java/com/yahoo/onepush/routing/metrics/stats/MetadataStorageStats.java', '~/work/program/personal/scala-ds/build.sbt', '~/work/program/personal/scala-ds/NERD_tree_1', '~/work/program/java/onepush/onepush-api/Makefile', '~/work/program/java/onepush/onepush-api/NERD_tree_1', '~/work/program/java/onepush/onepush-api/assembly/api/base.yidf', '~/work/program/java/onepush/onepush-api/README.md', '~/work/program/java/onepush/onepush-api/assembly/api/dev/NERD_tree_1', '~/work/program/java/onepush/onepush-api/assembly/api/dev/NERD_tree_2', '~/work/program/java/onepush/onepush-api/assembly/api/dev/gq1/base.yidf', '~/work/program/java/onepush/onepush-api/src/api_ykeykey/src/main/java/com/yahoo/onepush/client/YkeykeyClient.java', '~/temp/test.html', '~/work/program/java/onepush/onepush-api/src/api_ykeykey/src/main/java/com/yahoo/onepush/client/ProducerKeyClient.java', '~/work/program/java/onepush/onepush-api/src/api_ykeykey/pom.xml', '~/work/program/java/onepush/onepush-api/src/api_ykeykey/NERD_tree_1', '~/work/program/java/onepush/onepush-api/src/api_ykeykey/src/main/java/com/yahoo/onepush/client/CacheClient.java', '~/work/program/java/onepush/onepush-api/src/api_ykeykey/src/main/java/com/yahoo/onepush/common/Constants.java', '~/work/program/java/onepush/onepush-api/src/api_ykeykey/src/main/java/com/yahoo/onepush/conf/GeneratorConfiguration.java', '~/work/program/java/onepush/onepush-api/src/api_ykeykey/src/main/java/com/yahoo/onepush/filter/YCAFilter.java', '~/work/program/java/onepush/onepush-api/src/api_ykeykey/src/main/java/com/yahoo/onepush/main/GeneratorService.java', '~/work/program/algorithm/leetCode/UglyNumber.java', '~/work/program/algorithm/leetCode/NERD_tree_1', '~/work/program/algorithm/leetCode/bfs/SurroundedRegions.java', '~/work/program/algorithm/leetCode/array/3SumClosest.java', '~/work/program/algorithm/leetCode/array/FindSmallestValueNotInSubsetSum.java', '~/work/program/algorithm/leetCode/array/MajorityNumber.java', '~/work/program/algorithm/leetCode/array/MajorityNumberK.java', '~/work/program/algorithm/leetCode/array/MaximalTweetPerSecondInPastKSeconds.java', '~/work/program/algorithm/leetCode/array/MaximumContinuous1.java', '~/work/program/algorithm/leetCode/array/MaximumProductSubarray.java', '~/work/program/algorithm/leetCode/array/PermutationSequence.java', '~/work/program/algorithm/leetCode/array/PlusOne.java', '~/work/program/algorithm/leetCode/array/RecoverSortedArray.java', '~/work/program/algorithm/leetCode/array/ReservoirSampling.java', '~/work/program/algorithm/leetCode/array/RotateImage.java', '~/work/program/algorithm/leetCode/array/ShuffleArray.java', '~/work/program/algorithm/leetCode/array/SingleNumber.java', '~/work/program/algorithm/leetCode/array/SingleNumber2.java', '~/work/program/algorithm/leetCode/array/SingleNumber3.java', '~/work/program/algorithm/leetCode/array/SubArrayClosestToZero.java', '~/work/program/algorithm/leetCode/array/SubArrayEqualZero.java', '~/work/program/algorithm/leetCode/array/ThreeSum.java', '~/work/program/algorithm/leetCode/array/TrappingRainWater.java', '~/work/program/algorithm/leetCode/array/TwoSum.java', '~/work/program/algorithm/leetCode/detail/DivideTwoIntegers.java', '~/work/program/algorithm/leetCode/dfs/CombinationSum.java', '~/work/program/algorithm/leetCode/dfs/GenerateParentheses.java', '~/work/program/algorithm/leetCode/dfs/WordSearch.java', '~/work/program/algorithm/leetCode/linkedlist/LinkedListCycle.java', '~/work/program/algorithm/leetCode/linkedlist/LRUCache.java', '~/work/program/algorithm/leetCode/linkedlist/ReorderList.java', '~/work/program/algorithm/leetCode/linkedlist/RemoveNthNodeFromEndOfList.java', '~/work/program/algorithm/leetCode/linkedlist/ReverseLinkedList2.java', '~/work/program/algorithm/leetCode/linkedlist/ReverseNodeInKGroup.java', '~/work/program/algorithm/leetCode/sort/QuickSort.java', '~/work/program/algorithm/leetCode/sort/HeapSort.java', '~/work/program/algorithm/leetCode/stack_queue/EvaluateReversePolishNotation.java', '~/work/program/algorithm/leetCode/stack_queue/LargestRectangleInHistogram.java', '~/work/program/algorithm/leetCode/string/RegularExpressionMatching.java', '~/work/program/algorithm/leetCode/string/ShortestDistance.java', '~/work/program/algorithm/leetCode/string/StrStr.java', '~/work/program/java/onepush/onepush-cms-lib/pom.xml', '~/work/program/java/onepush/onepush-cms-lib/NERD_tree_1', '~/work/program/java/onepush/onepush-cms-lib/src/main/java/com/yahoo/onepush/cms/CMSInstance.java', '~/work/program/java/onepush/onepush-cms-lib/src/main/java/com/yahoo/onepush/cms/destination/CMSQueue.java', '~/work/program/java/onepush/onepush-cms-lib/src/main/java/com/yahoo/onepush/cms/destination/CMSDestination.java', '~/work/program/java/onepush/onepush-api/src/api/src/main/java/com/yahoo/onepush/api/handler/CloudRepoListAppsHandler.java', '~/work/program/java/onepush/onepush-api/src/api/src/main/java/com/yahoo/onepush/api/validation/APIValidator.java', '~/work/program/java/onepush/onepush-api/src/api/pom.xml', '~/work/program/java/onepush/onepush-api/src/api/__MRU_Files__', '~/work/program/java/onepush/onepush-api/src/api/NERD_tree_1', '~/work/program/java/onepush/onepush-api/src/api/src/main/java/com/yahoo/onepush/api/actions/topic/SetTopicMetaAction.java', '~/work/program/java/onepush/onepush-api/src/api/src/main/java/com/yahoo/onepush/api/exception/APIException.java', '~/work/program/java/onepush/onepush-api/src/api/GoToFile', '~/work/program/java/onepush/onepush-api/src/metadata/src/main/java/com/yahoo/onepush/metadata/exception/MetaStorageException.java', '~/work/program/java/onepush/onepush-api/src/routing/src/main/java/com/yahoo/onepush/routing/handler/TopicAttributesHandler.java', '~/work/program/java/onepush/onepush-api/GoToFile', '~/work/program/java/onepush/onepush-api/src/api/src/main/java/com/yahoo/onepush/api/APIApplication.java', '~/work/program/java/onepush/onepush-api/src/routing/GoToFile', '~/work/program/java/onepush/onepush-api/src/api/src/main/java/com/yahoo/onepush/api/handler/BaseRequestHandler.java', '~/work/program/java/onepush/onepush-api/src/api/src/main/java/com/yahoo/onepush/api/handler/TimeoutRequestHandler.java', '~/work/program/java/onepush/onepush-api/src/api/src/main/java/com/yahoo/onepush/api/handler/AbstractContentChannel.java', '~/work/program/java/onepush/onepush-api/src/api/src/main/java/com/yahoo/onepush/api/Constants.java', '~/work/program/java/onepush/onepush-api/src/api/src/main/java/com/yahoo/onepush/api/handler/v1/NotifyRequestHandler.java', '~/work/program/algorithm/leetCode/__MRU_Files__', '~/work/program/algorithm/leetCode/NumDigitKInRange.java', '~/work/program/algorithm/leetCode/GoToFile', '~/work/program/algorithm/leetCode/dp/EditDistance.java', '~/work/program/algorithm/leetCode/array/FindMaximumDistance.java', '~/work/program/algorithm/leetCode/.git/COMMIT_EDITMSG', '~/work/program/algorithm/ctci/java/Chapter 17/Question17_7/Question.java', '~/work/program/algorithm/ctci/NERD_tree_1', '~/work/program/algorithm/ctci/java/Chapter 17/Question17_8/Question.java', '~/work/program/algorithm/ctci/java/Chapter 17/Question17_9/Question.java', '~/work/program/algorithm/ctci/java/Chapter 17/Question17_10/Attribute.java']
+v:dying               #0
+v:windowid            #0
+v:termresponse         ^[[>0;95;c
+v:lang                 en_US.UTF-8
+v:count               #0
+v:progname             vim
+v:cmdbang             #0
+v:foldlevel           #0
+v:operator             d
+v:ctype                en_US.UTF-8
+v:prevcount           #0
+v:register             "
+v:mouse_win           #0
+v:count1              #1
+v:char                 
+v:foldstart           #0
+v:foldend             #0
+v:profiling           #0
+v:beval_col           #0
+v:errmsg               E108: No such variable: "b:eclim_tab_id"
+v:beval_lnum          #0
+v:mouse_lnum          #0
+v:insertmode           i
+v:beval_bufnr         #0
+v:this_session         /Users/lvfm/work/program/opensource/akka/akka-samples/akka-sample-cluster-java/Session.vim
+v:shell_error         #0
+v:lc_time              en_US.UTF-8
+v:searchforward       #1
+v:mouse_col           #0
+v:statusmsg            Already at oldest change

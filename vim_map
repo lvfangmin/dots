@@ -1,0 +1,196 @@
+
+
+   <C-H>         <C-W>h
+x  <Tab>         <Plug>snipMateVisual
+s  <Tab>         <Plug>snipMateNextOrTrigger
+n  <Tab>       * :bn<CR>
+   <NL>          <C-W>j
+   <C-K>         <C-W>k
+   <C-L>         <C-W>l
+n  <C-W><C-F>  * :call GotoFile("new")<CR>
+n  <C-W>f      * :call GotoFile("new")<CR>
+s  <C-\>       * <C-C>`>a<C-R>=XPTemplateStart(0,{'k':'<C-\++'})<CR>
+x  <C-\>       * "0s<C-R>=XPTemplatePreWrap(@0)<CR>
+v  <C-_>9      * :TCommentMaybeInline count=9<CR>
+no <C-_>9      * :TComment count=9<CR>
+v  <C-_>8      * :TCommentMaybeInline count=8<CR>
+no <C-_>8      * :TComment count=8<CR>
+v  <C-_>7      * :TCommentMaybeInline count=7<CR>
+no <C-_>7      * :TComment count=7<CR>
+v  <C-_>6      * :TCommentMaybeInline count=6<CR>
+no <C-_>6      * :TComment count=6<CR>
+v  <C-_>5      * :TCommentMaybeInline count=5<CR>
+no <C-_>5      * :TComment count=5<CR>
+v  <C-_>4      * :TCommentMaybeInline count=4<CR>
+no <C-_>4      * :TComment count=4<CR>
+v  <C-_>3      * :TCommentMaybeInline count=3<CR>
+no <C-_>3      * :TComment count=3<CR>
+v  <C-_>2      * :TCommentMaybeInline count=2<CR>
+no <C-_>2      * :TComment count=2<CR>
+v  <C-_>1      * :TCommentMaybeInline count=1<CR>
+no <C-_>1      * :TComment count=1<CR>
+   <C-_>ca     * :<C-U>call tcomment#SetOption("as", input("Comment as: ", &filetype, "customlist,tcomment#Complete"))<CR>
+   <C-_>cc     * :<C-U>call tcomment#SetOption("count", v:count1)<CR>
+   <C-_>s      * :TCommentAs <C-R>=&ft<CR>_
+   <C-_>n      * :TCommentAs <C-R>=&ft<CR><Space>
+   <C-_>a      * :TCommentAs<Space>
+   <C-_>b      * :TCommentBlock<CR>
+   <C-_>i      * v:TCommentInline mode=I#<CR>
+   <C-_>r      * :TCommentRight<CR>
+   <C-_><Space> * :TComment<Space>
+   <C-_>p      * m`vip:TComment<CR>``
+v  <C-_><C-_>  * :TCommentMaybeInline<CR>
+no <C-_><C-_>  * :TComment<CR>
+n  <Space>       <PageDown>
+   +             <C-W>+
+v  ,,w         * :<C-U>call EasyMotion#WB(1, 0)<CR>
+o  ,,w         * :call EasyMotion#WB(0, 0)<CR>
+n  ,,w         * :call EasyMotion#WB(0, 0)<CR>
+v  ,,t         * :<C-U>call EasyMotion#T(1, 0)<CR>
+o  ,,t         * :call EasyMotion#T(0, 0)<CR>
+n  ,,t         * :call EasyMotion#T(0, 0)<CR>
+v  ,,n         * :<C-U>call EasyMotion#Search(1, 0)<CR>
+o  ,,n         * :call EasyMotion#Search(0, 0)<CR>
+n  ,,n         * :call EasyMotion#Search(0, 0)<CR>
+v  ,,k         * :<C-U>call EasyMotion#JK(1, 1)<CR>
+o  ,,k         * :call EasyMotion#JK(0, 1)<CR>
+n  ,,k         * :call EasyMotion#JK(0, 1)<CR>
+v  ,,j         * :<C-U>call EasyMotion#JK(1, 0)<CR>
+o  ,,j         * :call EasyMotion#JK(0, 0)<CR>
+n  ,,j         * :call EasyMotion#JK(0, 0)<CR>
+v  ,,gE        * :<C-U>call EasyMotion#EW(1, 1)<CR>
+o  ,,gE        * :call EasyMotion#EW(0, 1)<CR>
+n  ,,gE        * :call EasyMotion#EW(0, 1)<CR>
+v  ,,f         * :<C-U>call EasyMotion#F(1, 0)<CR>
+o  ,,f         * :call EasyMotion#F(0, 0)<CR>
+n  ,,f         * :call EasyMotion#F(0, 0)<CR>
+v  ,,e         * :<C-U>call EasyMotion#E(1, 0)<CR>
+o  ,,e         * :call EasyMotion#E(0, 0)<CR>
+n  ,,e         * :call EasyMotion#E(0, 0)<CR>
+v  ,,b         * :<C-U>call EasyMotion#WB(1, 1)<CR>
+o  ,,b         * :call EasyMotion#WB(0, 1)<CR>
+n  ,,b         * :call EasyMotion#WB(0, 1)<CR>
+v  ,,W         * :<C-U>call EasyMotion#WBW(1, 0)<CR>
+o  ,,W         * :call EasyMotion#WBW(0, 0)<CR>
+n  ,,W         * :call EasyMotion#WBW(0, 0)<CR>
+v  ,,T         * :<C-U>call EasyMotion#T(1, 1)<CR>
+o  ,,T         * :call EasyMotion#T(0, 1)<CR>
+n  ,,T         * :call EasyMotion#T(0, 1)<CR>
+v  ,,N         * :<C-U>call EasyMotion#Search(1, 1)<CR>
+o  ,,N         * :call EasyMotion#Search(0, 1)<CR>
+n  ,,N         * :call EasyMotion#Search(0, 1)<CR>
+v  ,,ge        * :<C-U>call EasyMotion#E(1, 1)<CR>
+o  ,,ge        * :call EasyMotion#E(0, 1)<CR>
+n  ,,ge        * :call EasyMotion#E(0, 1)<CR>
+v  ,,F         * :<C-U>call EasyMotion#F(1, 1)<CR>
+o  ,,F         * :call EasyMotion#F(0, 1)<CR>
+n  ,,F         * :call EasyMotion#F(0, 1)<CR>
+v  ,,E         * :<C-U>call EasyMotion#EW(1, 0)<CR>
+o  ,,E         * :call EasyMotion#EW(0, 0)<CR>
+n  ,,E         * :call EasyMotion#EW(0, 0)<CR>
+v  ,,B         * :<C-U>call EasyMotion#WBW(1, 1)<CR>
+o  ,,B         * :call EasyMotion#WBW(0, 1)<CR>
+n  ,,B         * :call EasyMotion#WBW(0, 1)<CR>
+   ,_s         * :TCommentAs <C-R>=&ft<CR>_
+   ,_n         * :TCommentAs <C-R>=&ft<CR><Space>
+   ,_a         * :TCommentAs<Space>
+   ,_b         * :TCommentBlock<CR>
+   ,_r         * :TCommentRight<CR>
+x  ,_i         * :TCommentInline<CR>
+   ,_<Space>   * :TComment<Space>
+   ,_p         * vip:TComment<CR>
+x  ,__         * :TCommentMaybeInline<CR>
+nos,__         * :TComment<CR>
+n  ,b          * :CommandTBuffer<CR>
+   ,eg           :sp ~/.vim/bundle/snipmate-snippets/snippets/_.snippets<CR>
+   ,ej           :sp ~/.vim/bundle/snipmate-snippets/snippets/java.snippets<CR>
+n  ,hh           <C-W>H
+n  ,o            <C-W>F
+n  ,d            <Plug>DashSearch
+n  ,ff           :QuickFixClear<CR>
+n  ,ss           :SignClearAll<CR>
+n  ,h          * :JavaHierarchy<CR>
+n  ,v          * :Validate<CR>
+n  ,mg         * :JavaGetSet<CR>
+n  ,c          * :JavaCorrect<CR>
+n  ,si         * :ScalaImport<CR>
+n  ,s          * :ScalaSearch<CR>
+n  ,j          * :JavaSearchContext<CR>
+n  ,i          * :JavaImport<CR>
+ov ,c            :JSHint<CR>
+   ,vs           :call conque_term#open('bash', ['belowright split', 'resize 8'])<CR>
+   ,vv           :call conque_term#open('bash', ['belowright vsplit'])<CR>
+n  ,r          * :MRU<CR>
+n  ,vh         * :help <C-R><C-W><CR>
+n  ,g          * :Ack <C-R><C-W><CR>
+n  ,lv           :lv /<C-R>=expand("<cword>")<CR>/ %<CR>:lw<CR>
+   ,cc           <C-_><C-_>
+   ,jc           :call JCommentWriter()<CR>
+v  ,y          * "+y"
+n  ,iv           :set list!<CR>
+n  ,sc         * <Esc>/\v^[<=>]{7}( .*|$)<CR>
+n  ,E          * :e! ~/.vimrc<CR>
+n  ,sf         * :CommandT<CR>
+   ,tm           :tabmove         " move a tab to a new location
+   ,tp           :tabprev<CR>     " previous tab
+   ,tn           :tabnext<CR>     " next tab
+   ,td           :tabclose<CR>    " close a tab
+   ,tc           :tabnew %<CR>    " create a new tab
+n  ,tt           :TagbarToggle<CR>
+n  ,nn           :NERDTreeToggle<CR>
+n  ,fc           :%foldclose!<CR>
+n  ,fo           :%foldopen!<CR>
+   ,<Space>      zfi{
+   -             <C-W>-
+n  ;           * :
+   <MouseMiddle>   <Esc>"*p
+n  R           * R<C-R>=<SNR>28_feedPopup()<CR>
+n  a           * a<C-R>=<SNR>28_feedPopup()<CR>
+n  gx            <Plug>NetrwBrowseX
+x  gC          * :TCommentMaybeInline!<CR>
+n  gCc         * :let w:tcommentPos = getpos(".") | set opfunc=tcomment#OperatorLineAnyway<CR>g@$
+n  gC          * :let w:tcommentPos = getpos(".") | set opfunc=tcomment#OperatorAnyway<CR>g@
+x  gc          * :TCommentMaybeInline<CR>
+n  gcc         * :let w:tcommentPos = getpos(".") | set opfunc=tcomment#OperatorLine<CR>g@$
+n  gc9c        * :let w:tcommentPos = getpos(".") | call tcomment#SetOption("count", 9) | set opfunc=tcomment#Operator<CR>g@
+n  gc8c        * :let w:tcommentPos = getpos(".") | call tcomment#SetOption("count", 8) | set opfunc=tcomment#Operator<CR>g@
+n  gc7c        * :let w:tcommentPos = getpos(".") | call tcomment#SetOption("count", 7) | set opfunc=tcomment#Operator<CR>g@
+n  gc6c        * :let w:tcommentPos = getpos(".") | call tcomment#SetOption("count", 6) | set opfunc=tcomment#Operator<CR>g@
+n  gc5c        * :let w:tcommentPos = getpos(".") | call tcomment#SetOption("count", 5) | set opfunc=tcomment#Operator<CR>g@
+n  gc4c        * :let w:tcommentPos = getpos(".") | call tcomment#SetOption("count", 4) | set opfunc=tcomment#Operator<CR>g@
+n  gc3c        * :let w:tcommentPos = getpos(".") | call tcomment#SetOption("count", 3) | set opfunc=tcomment#Operator<CR>g@
+n  gc2c        * :let w:tcommentPos = getpos(".") | call tcomment#SetOption("count", 2) | set opfunc=tcomment#Operator<CR>g@
+n  gc1c        * :let w:tcommentPos = getpos(".") | call tcomment#SetOption("count", 1) | set opfunc=tcomment#Operator<CR>g@
+n  gc          * :<C-U>if v:count > 0 | call tcomment#SetOption("count", v:count) | endif | let w:tcommentPos = getpos(".") | set opfunc=tcomment#Operator<CR>g@
+n  gf          * :call GotoFile("")<CR>
+n  i           * i<C-R>=<SNR>28_feedPopup()<CR>
+n  ma          * :call <SNR>69_VMarkClearAll()<CR>
+n  mp          * :call <SNR>69_VMarkPrevious()<CR>
+n  mn          * :call <SNR>69_VMarkNext()<CR>
+n  mm          * :call <SNR>69_VMarkToggle()<CR>
+s  <Plug>selectToInsert * d<BS>
+s  <S-Tab>       <Plug>snipMateBack
+n  <Plug>NetrwBrowseX * :call netrw#NetrwBrowseX(expand("<cWORD>"),0)<CR>
+n  <F3>        * :call <SNR>69_VMarkPrevious()<CR>
+n  <F2>        * :call <SNR>69_VMarkNext()<CR>
+x  <Plug>snipMateVisual * s<C-O>:let g:snipmate_content_visual=getreg('1')<CR>
+s  <Plug>snipMateBack * <Esc>a<C-R>=snipMate#BackwardsSnippet()<CR>
+s  <Plug>snipMateNextOrTrigger * <Esc>a<C-R>=snipMate#TriggerSnippet()<CR>
+n  <Plug>(godoc-keyword) * :<C-U>call <SNR>64_Godoc('')<CR>
+s  <Plug>(neocomplcache_snippets_force_jump) * :<C-U>:echoerr <SNR>43_print_snippets_complete_error()<CR>
+s  <Plug>(neocomplcache_snippets_force_expand) * :<C-U>:echoerr <SNR>43_print_snippets_complete_error()<CR>
+s  <Plug>(neocomplcache_snippets_jump) * :<C-U>:echoerr <SNR>43_print_snippets_complete_error()<CR>
+s  <Plug>(neocomplcache_snippets_expand) * :<C-U>:echoerr <SNR>43_print_snippets_complete_error()<CR>
+   <SNR>31_DashGlobalSearch * :Dash!<CR>
+   <Plug>DashGlobalSearch & <SNR>31_DashGlobalSearch
+   <SNR>31_DashSearch * :Dash<CR>
+   <Plug>DashSearch & <SNR>31_DashSearch
+n  <F11>       * :call conque_term#exec_file()<CR>
+v  <BS>          "-d
+v  <D-x>         "*d
+v  <D-c>         "*y
+v  <D-v>         "-d"*P
+n  <D-v>         "*P
+   ð             :call SearchInvalidComment(1)<CR>
+   î             :call SearchInvalidComment(0)<CR>
+   ã             :call JCommentWriter()<CR>
