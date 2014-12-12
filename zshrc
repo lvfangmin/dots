@@ -96,7 +96,7 @@ alias jeclipse='/Users/lvfm/work/software/eclipse/eclipse &'
 alias ll='ls -l'
 alias me='mvn eclipse:eclipse'
 alias moshup='mosh underquiet.peking.corp.yahoo.com -- screen'
-# alias mvn="mvn -s /Users/lvfm/work/shell/ymaven_settings.xml "
+alias mvn="mvn -s /Users/lvfm/work/shell/ymaven_settings.xml "
 
 function cs() {
 	cd $1; ls;

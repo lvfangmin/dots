@@ -100,13 +100,6 @@ nmap <LocalLeader>nn :NERDTreeToggle<cr>
 " colorscheme darkblue_my 
 " sy on
 
-"java auto complete
-autocmd Filetype java set omnifunc=javacomplete#Complete
-autocmd Filetype java set completefunc=javacomplete#CompeleteParamsInf
-inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P> 
-inoremap <buffer> <C-S-Space> <C-X><C-U><C-P>
-"autocmd Filetype java,javascript,jsp inoremap <buffer> . .<C-X><C-O><C-P>
-
 " press enter to select auto complete
 inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
 
@@ -217,10 +210,12 @@ set backspace=2
 nnoremap <silent> <LocalLeader>sf :CommandT<cr>
 nnoremap <silent> <LocalLeader>E :e! ~/.vimrc<cr>
 vnoremap <LocalLeader>y "+y"
-nnoremap <LocalLeader>g :Ack<cr>
+nnoremap <LocalLeader>g :Ack <C-R><C-W><cr>
 map <silent> <LocalLeader>vs :call conque_term#open('bash', ['belowright split', 'resize 8'])<cr>
 map <silent> <LocalLeader>vv :call conque_term#open('bash', ['belowright vsplit'])<cr>
-nnoremap <LocalLeader>vh :help<cr>
+nnoremap <LocalLeader>vh :help<C-R><C-W><cr>
+
+inoremap <LocalLeader>, <C-X><C-U>
 
 nnoremap <silent> <LocalLeader>h :JavaHierarchy<cr>
 nnoremap <silent> <LocalLeader>v :Validate<cr>
@@ -230,6 +225,7 @@ nnoremap <silent> <LocalLeader>si :ScalaImport<cr>
 nnoremap <silent> <LocalLeader>s :ScalaSearch<cr>
 nnoremap <silent> <LocalLeader>j :JavaSearchContext<cr>
 nnoremap <silent> <LocalLeader>i :JavaImport<cr>
+
 
 nmap <silent> <LocalLeader>d <Plug>DashSearch
 nmap <LocalLeader>ff :QuickFixClear<cr>
