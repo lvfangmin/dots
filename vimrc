@@ -4,7 +4,7 @@ set nocompatible
 "show the line number before each line
 set number
 
-"set the syntax on 
+"set the syntax on
 syntax on
 
 "open plugin
@@ -76,7 +76,7 @@ set fillchars=vert:|
 " NERDTree setting
 """"""""""""""""""""""""""""""
 let NERDChristmasTree=1
-let NERDTreeWinSize=40 
+let NERDTreeWinSize=25
 nmap <silent> <leader>tt :NERDTreeToggle<cr>
 
 " Settings for taglist.vim
@@ -97,7 +97,7 @@ let g:tagbar_compact=1
 " ,nn will toggle NERDTree on and off
 nmap <LocalLeader>nn :NERDTreeToggle<cr>
 " theme
-" colorscheme darkblue_my 
+" colorscheme darkblue_my
 " sy on
 
 " press enter to select auto complete
@@ -108,7 +108,7 @@ set laststatus=2
 if has('statusline')
 	function! SetStatusLineStyle()
 		let &stl="%f %y " .
-				\"%([%R%M]%)" .	
+				\"%([%R%M]%)" .
 				\"%#StatusLineNC#%{&ff=='unix'?'':&ff.'\ format'}%*" .
 				\"%{'$'[!&list]}"               .
 				\"%{'~'[&pm=='']}"              .
@@ -197,7 +197,7 @@ set title
 set noswapfile
 set suffixes=.bak,~,.o,.h,.info,.swp,.obj,.class
 
-set statusline=%f\ %y\ %([%R%M]%)%#StatusLineNC#%{&ff=='unix'?'':&ff.'\ format'}%*%{'$'[!&list]}%{'~'[&pm=='']}%=#%n\ %l/%L,%c%V\ 
+set statusline=%f\ %y\ %([%R%M]%)%#StatusLineNC#%{&ff=='unix'?'':&ff.'\ format'}%*%{'$'[!&list]}%{'~'[&pm=='']}%=#%n\ %l/%L,%c%V\
 set softtabstop=4
 set smartcase
 set listchars=tab:▸▸,trail:<,extends:>,precedes:<,nbsp:%
@@ -214,6 +214,8 @@ nnoremap <LocalLeader>g :Ack <C-R><C-W><cr>
 map <silent> <LocalLeader>vs :call conque_term#open('bash', ['belowright split', 'resize 8'])<cr>
 map <silent> <LocalLeader>vv :call conque_term#open('bash', ['belowright vsplit'])<cr>
 nnoremap <LocalLeader>vh :help<C-R><C-W><cr>
+
+nnoremap <LocalLeader>w :so ~/.vimrc<cr>
 
 inoremap <LocalLeader>, <C-X><C-U>
 
@@ -237,3 +239,9 @@ map <LocalLeader>eg :sp ~/.vim/bundle/snipmate-snippets/snippets/_.snippets<cr>
 
 nmap <Tab> :bn<CR>
 nmap <LocalLeader>iv :set list!<CR>
+
+hi Pmenu ctermbg=117 gui=bold
+hi SignColumn ctermbg=NONE ctermfg=NONE
+
+" auto remove all trailing white spaces
+autocmd BufWritePre * :%s/\s\+$//e

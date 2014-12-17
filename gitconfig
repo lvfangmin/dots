@@ -3,6 +3,7 @@
 	email = lvfm@yahoo-inc.com
 [core]
 	excludesfile = /Users/lvfm/.gitignore_global
+    editor = /usr/local/bin/vim
 [color]
 	ui = auto
 [alias]
@@ -21,7 +22,7 @@
     lu = ls-files -o --exclude-standard
 	au = !git add $(git ls-files -o --exclude-standard)
     mt = mergetool --tool=vimdiff
-    cat = cat-file -p 
-    fp = format-patch --signoff 
+    cat = cat-file -p
+    fp = format-patch --signoff
     lf = fsck --lost-found
     upstream =  branch --set-upstream

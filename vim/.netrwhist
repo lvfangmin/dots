@@ -1,9 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/lvfm/.vim/bundle/nerdtree'
-let g:netrw_dirhist_2='/Users/lvfm/.vim/bundle/vim-powerline'
-let g:netrw_dirhist_3='/Users/lvfm/.oh-my-zsh/cache'
-let g:netrw_dirhist_4='/Users/lvfm/work/dots/vim/bundle/command-t'
-let g:netrw_dirhist_5='/Users/lvfm/temp'
-let g:netrw_dirhist_6='/Users/lvfm/work/dots/vim/eclim/doc'
-let g:netrw_dirhist_7='/Users/lvfm/work/dots/vim/eclim/plugin'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/lvfm/work/program/java/cloud-repo/docs/source'
+let g:netrw_dirhist_2='/Users/lvfm/.oh-my-zsh'
+let g:netrw_dirhist_3='/Users/lvfm/temp/temp'
