@@ -245,3 +245,9 @@ hi SignColumn ctermbg=NONE ctermfg=NONE
 
 " auto remove all trailing white spaces
 autocmd BufWritePre * :%s/\s\+$//e
+
+" RainBow settings
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces

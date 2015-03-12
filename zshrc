@@ -50,7 +50,7 @@ plugins=(git)
 # User configuration
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -136,6 +136,11 @@ function dash () {
 	~/work/software/javadocset $1 $2
 }
 
+function db() {
+    git branch -D $1
+    deleteRemoteBranch $1
+}
+
 function deleteRemoteBranch () {
 	git branch -rd origin/$1
 	git push origin :$1
@@ -161,7 +166,7 @@ function gadd () {
 }
 
 function gddp () {
-	REV=$1 
+	REV=$1
 	git show -p $REV --no-prefix | patch -p0
 }
 
@@ -174,7 +179,7 @@ function lconflict () {
 }
 
 function master_win () {
-	files=$(git ls-files -u | awk '{print $4}' | sort -u | grep $1) 
+	files=$(git ls-files -u | awk '{print $4}' | sort -u | grep $1)
 	while read file
 	do
 		echo "revert changes of $file"
@@ -216,12 +221,12 @@ function newsbt () {
 }
 
 function re () {
-	files=(./*) 
+	files=(./*)
 	/usr/local/bin/vim "${files[RANDOM % ${#files[@]}]}"
 }
 
 function release_win () {
-	files=$(git ls-files -u | awk '{print $4}' | sort -u | grep $1) 
+	files=$(git ls-files -u | awk '{print $4}' | sort -u | grep $1)
 	while read file
 	do
 		echo "revert changes of $file"
