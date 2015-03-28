@@ -11,7 +11,7 @@ ZSH_THEME="robbyrussell"
 # CASE_SENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -50,7 +50,7 @@ plugins=(git)
 # User configuration
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -92,11 +92,10 @@ alias .....='cd ../../../..'
 alias aws='ssh -i ~/work/software/aws_instance.pem ec2-user@ec2-54-186-254-248.us-west-2.compute.amazonaws.com'
 
 alias jconsole='jconsole -J-DsocksProxyHost=socks.yahoo.com -J-DsocksProxyPort=1080'
-alias jeclipse='/Users/lvfm/work/software/eclipse/eclipse &'
+alias jeclipse='/Users/allenlv/work/eclipse/eclipse &'
 alias ll='ls -l'
 alias me='mvn eclipse:eclipse'
 alias moshup='mosh underquiet.peking.corp.yahoo.com -- screen'
-alias mvn="mvn -s /Users/lvfm/work/shell/ymaven_settings.xml "
 
 function cs() {
 	cd $1; ls;

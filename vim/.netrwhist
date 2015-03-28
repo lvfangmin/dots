@@ -1,8 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/lvfm/work/program/algorithm/leetCode/discretization'
-let g:netrw_dirhist_2='/Users/lvfm/work/program/java/jdisc/jdisc_bundles/jdisc_http_filters'
-let g:netrw_dirhist_3='/Users/lvfm/work/program/algorithm/leetCode/discretization'
-let g:netrw_dirhist_4='/Users/lvfm/work/program/java/cloud-repo/api'
-let g:netrw_dirhist_5='/Users/lvfm/work/program/opensource/activemq/activemq-leveldb-store'
-let g:netrw_dirhist_6='/Users/lvfm/work/program/java/cloud-repo/api'
+let g:netrw_dirhist_cnt =0

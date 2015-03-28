@@ -36,10 +36,13 @@ set smartindent
 
 set cindent
 
-"
-set shiftwidth=4
+" set shift width to be 2 spaces
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
+set smarttab
+set expandtab
 
-set tabstop=4
 set vb t_vb=
 set ruler
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -76,7 +79,7 @@ set fillchars=vert:|
 " NERDTree setting
 """"""""""""""""""""""""""""""
 let NERDChristmasTree=1
-let NERDTreeWinSize=25
+let NERDTreeWinSize=33
 nmap <silent> <leader>tt :NERDTreeToggle<cr>
 
 " Settings for taglist.vim
@@ -93,6 +96,7 @@ let Tlist_File_Fold_Auto_Close = 1
 " Settings for tagbar.vim
 nmap <LocalLeader>tt :TagbarToggle<cr>
 let g:tagbar_compact=1
+let g:tagbar_width=33
 
 " ,nn will toggle NERDTree on and off
 nmap <LocalLeader>nn :NERDTreeToggle<cr>
@@ -164,12 +168,6 @@ map <LocalLeader>tm :tabmove         " move a tab to a new location
 " bundle
 call pathogen#infect()
 
-" powerline setting
-set guifont=utf-8
-set nocompatible
-set t_Co=256
-let g:Powerline_symbols = 'fancy'
-
 " map c-h to c-w h
 map <C-h> <C-w>h
 map <C-l> <C-w>l
@@ -186,9 +184,9 @@ set pastetoggle=<F2>
 map <LocalLeader>r :MRU<cr>
 map <Space> <c-f>
 
-"syntax enable
-"set background=light
-"colorscheme solarized
+syntax enable
+set background=dark
+colorscheme solarized
 let g:solarized_termcolors=256
 
 set visualbell
@@ -198,18 +196,16 @@ set noswapfile
 set suffixes=.bak,~,.o,.h,.info,.swp,.obj,.class
 
 set statusline=%f\ %y\ %([%R%M]%)%#StatusLineNC#%{&ff=='unix'?'':&ff.'\ format'}%*%{'$'[!&list]}%{'~'[&pm=='']}%=#%n\ %l/%L,%c%V\
-set softtabstop=4
 set smartcase
 set listchars=tab:▸▸,trail:<,extends:>,precedes:<,nbsp:%
 set fileencodings=ucs-bom,utf-8,default,latin1
-set expandtab
 set dictionary=/usr/share/dict/words
 set completeopt=menu
 set backspace=2
 
 nnoremap <silent> <LocalLeader>sf :CommandT<cr>
 nnoremap <silent> <LocalLeader>E :e! ~/.vimrc<cr>
-vnoremap <LocalLeader>y "+y"
+vnoremap <LocalLeader>y "+y"<cr>
 nnoremap <LocalLeader>g :Ack <C-R><C-W><cr>
 map <silent> <LocalLeader>vs :call conque_term#open('bash', ['belowright split', 'resize 8'])<cr>
 map <silent> <LocalLeader>vv :call conque_term#open('bash', ['belowright vsplit'])<cr>
@@ -228,7 +224,6 @@ nnoremap <silent> <LocalLeader>s :ScalaSearch<cr>
 nnoremap <silent> <LocalLeader>j :JavaSearchContext<cr>
 nnoremap <silent> <LocalLeader>i :JavaImport<cr>
 
-
 nmap <silent> <LocalLeader>d <Plug>DashSearch
 nmap <LocalLeader>ff :QuickFixClear<cr>
 nmap <LocalLeader>ss :SignClearAll<cr>
@@ -240,7 +235,7 @@ map <LocalLeader>eg :sp ~/.vim/bundle/snipmate-snippets/snippets/_.snippets<cr>
 nmap <Tab> :bn<CR>
 nmap <LocalLeader>iv :set list!<CR>
 
-hi Pmenu ctermbg=117 gui=bold
+hi Pmenu ctermbg=255 ctermfg=33 gui=bold
 hi SignColumn ctermbg=NONE ctermfg=NONE
 
 " auto remove all trailing white spaces
@@ -251,3 +246,12 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+" powerline setting
+set nocompatible
+set t_Co=256
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+set laststatus=2 " Always display the statusline in all windows
+set encoding=utf-8
