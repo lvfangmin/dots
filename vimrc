@@ -1,245 +1,150 @@
 "close vi compatible mode
 set nocompatible
 
-"show the line number before each line
-set number
-
-"set the syntax on
-syntax on
-
-"open plugin
-filetype on
-filetype plugin on
-filetype plugin indent on
-
-"we have a fast terminal
-set ttyfast
-
-let maplocalleader=','        " all my macros start with ,
-"set foldmethod=syntax         " fold on syntax automagically, always
-"set foldcolumn=2              " 2 lines of column for fold showing, always
-" open all folds
-nmap <LocalLeader>fo  :%foldopen!<cr>
-" close all folds
-nmap <LocalLeader>fc  :%foldclose!<cr>
-set dictionary=/usr/share/dict/words " more words!
-
-"
-"auto indent when start a new line
-set autoindent
-
-"auto read file which was changed outside vim
-set autoread
-
-"Do smart indent in c-like language
-set smartindent
-
-set cindent
-
-" set shift width to be 2 spaces
-set shiftwidth=2
-set tabstop=2
-set softtabstop=2
-set smarttab
-set expandtab
-
-set vb t_vb=
-set ruler
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"
-" Search Configure
-"
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"increase search when type in
-set incsearch
-
-"highlight all match items, to cancel use command :noh
-set hlsearch
-
-"ignore case when search
-set ignorecase
-
-"scroll when the cursor is 3 lines bottom
-set scrolloff=3
-
-"set the line number width
-set numberwidth=4
-
-"highlight current line
-set cursorline
-:hi CursorLine cterm=none ctermbg=none ctermfg=blue
-
-"set on menu prompt
-set wildmenu
-
-"set \ between windows
-set fillchars=vert:|
-
-""""""""""""""""""""""""""""""
-" NERDTree setting
-""""""""""""""""""""""""""""""
-let NERDChristmasTree=1
-let NERDTreeWinSize=33
-nmap <silent> <leader>tt :NERDTreeToggle<cr>
-
-" Settings for taglist.vim
-let Tlist_Use_Right_Window=1
-let Tlist_Auto_Open=0
-let Tlist_Enable_Fold_Column=0
-let Tlist_Compact_Format=0
-let Tlist_WinWidth=28
-let Tlist_Exit_OnlyWindow=1
-let Tlist_File_Fold_Auto_Close = 1
-" ,tt will toggle taglist on and off
-" nmap <LocalLeader>tt :Tlist<cr>
-
-" Settings for tagbar.vim
-nmap <LocalLeader>tt :TagbarToggle<cr>
-let g:tagbar_compact=1
-let g:tagbar_width=33
-
-" ,nn will toggle NERDTree on and off
-nmap <LocalLeader>nn :NERDTreeToggle<cr>
-" theme
-" colorscheme darkblue_my
-" sy on
-
-" press enter to select auto complete
-inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
-
-" status line
-set laststatus=2
-if has('statusline')
-	function! SetStatusLineStyle()
-		let &stl="%f %y " .
-				\"%([%R%M]%)" .
-				\"%#StatusLineNC#%{&ff=='unix'?'':&ff.'\ format'}%*" .
-				\"%{'$'[!&list]}"               .
-				\"%{'~'[&pm=='']}"              .
-				\"%="                           .
-		 		\"#%n %l/%L,%c%V "              .
-				\""
-	endfunc
-	call SetStatusLineStyle()
-
-	if has('title')
-		set titlestring=%t%(\ [%R%M]%)
-	endif
-endif
-
-" ---------------------------------------------------------------------------
-"  mouse stuffs
-set mouse=a                   " mouse support in all modes
-set mousehide                 " hide the mouse when typing
-" this makes the mouse paste a block of text without formatting it
-" (good for code)
-map <MouseMiddle> <esc>"*p
-
-" ---------------------------------------------------------------------------
-"  backup options
-set backup
-"  set backup to dedicated dir, not current dir
-set backupdir=~/.backup
-set viminfo=%100,'100,/100,h,\"500,:100,n~/.viminfo
-set history=1000
-set viminfo='100,f1
-
-" toggle off help
-let NERDTreeMinimalUI=0
-
-" If I forgot to sudo vim a file, do that with :w!!
-cmap w!! %!sudo tee > /dev/null %
-" ruby helpers
-iab rbang #!/usr/bin/env ruby
-iab idef def initialize
-
-" ---------------------------------------------------------------------------
-" tabs
-" (LocalLeader is ",")
-map <LocalLeader>tc :tabnew %<cr>    " create a new tab
-map <LocalLeader>td :tabclose<cr>    " close a tab
-map <LocalLeader>tn :tabnext<cr>     " next tab
-map <LocalLeader>tp :tabprev<cr>     " previous tab
-map <LocalLeader>tm :tabmove         " move a tab to a new location
-
-" jump between java import files, not sure why not working
-" set suffixesadd+=.java
-
-" bundle
+" Use pathogen to easily modify the runtime path to include all plugins under
+" the ~/.vim/bundle directory
 call pathogen#infect()
+call pathogen#helptags()
 
-" map c-h to c-w h
+let maplocalleader=','            " all my macros start with ,
+filetype plugin indent on         " enable detection, plugins and indenting in one step
+syntax on                         " set the syntax on
+
+" ---------------------------------------------------------------------------
+" General Settings
+set ttyfast                       " always with a fast terminal
+set number                        " show the line number before each line
+set autoindent                    " auto indent when start a new line
+set autoread                      " auto reload files changed outside vim
+set smartindent                   " c like smart indent
+set cindent
+set smarttab                      " insert tabs on the start of a line according to
+                                  " shiftwidth
+set shiftwidth=2
+set tabstop=2                     " spaces occupied by a tab
+set softtabstop=2                 " number of spaces that a <Tab> counts for while
+                                  " performing editing operations
+set expandtab                     " use the appropriate number of spaces to insert
+                                  " a <Tab>
+set incsearch                     " show search matches as you type
+set hlsearch                      " highlight search items
+set ignorecase                    " ignore case when searching
+set smartcase                     " case sensitive if search contains uppercase
+set scrolloff=3                   " keep 3 lines off the edges of the screen when scrolling
+set numberwidth=4                 " number column width
+set cursorline                    " highlight the current line, for quick orientation
+set wildmenu                      " make tab completion for files/buffers act like bash
+set mouse=a                       " mouse support in all modes
+set mousehide                     " hide the mouse when typing
+set nobackup                      " do not keep backup files
+set nowritebackup
+set noswapfile                    " do not write annoying intermediate swap files
+set title                         " change the terminal's title
+set pastetoggle=<F2>              " key to paste mode
+set visualbell                    " do not beep
+set laststatus=2                  " always display the statusline
+set history=1000                  " remember more commands and search history
+set undolevels=1000               " use many muchos levels of undo
+set completeopt=menu
+set backspace=2
+set wildignore=*.o,*.obj,.git,*.jar,*.class
+set suffixes=.bak,~,.o,.h,.info,.swp,.obj,.class
+set fileencodings=ucs-bom,utf-8,default,latin1
+
+" more words!
+set dictionary=/usr/share/dict/words
+set vb t_vb=
+
+" ---------------------------------------------------------------------------
+" Color Theme
+
+" put on solarized theme
+" :so $MYVIMRC will change theme with this background, why?
+set background=dark
+colorscheme solarized
+let g:solarized_termcolors=256
+
+" set cursor line color
+hi CursorLine cterm=none ctermbg=none ctermfg=blue
+" set menu color
+hi Pmenu ctermbg=255 ctermfg=33 gui=bold
+" set sign column color
+hi SignColumn ctermbg=NONE ctermfg=NONE
+" symbols to be used as list chars
+set listchars=tab:▸▸,trail:<,extends:>,precedes:<,nbsp:%
+
+" ---------------------------------------------------------------------------
+" Shortcuts Keys
+
+" use ; instead of : to eliminate multiple keys being pressed
+map ; :
+map <space> <c-f>
+" easily move between window
 map <C-h> <C-w>h
 map <C-l> <C-w>l
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 
-" no back up file
-set nobackup
-set nowritebackup
+" this makes the mouse paste a block of text without formatting it
+" (good for code)
+map <MouseMiddle> <esc>"*p
 
-map ; :
-set pastetoggle=<F2>
-
-map <LocalLeader>r :MRU<cr>
-map <Space> <c-f>
-
-syntax enable
-set background=dark
-colorscheme solarized
-let g:solarized_termcolors=256
-
-set visualbell
-set wildignore=*.o,*.obj,.git,*.jar,*.class
-set title
-set noswapfile
-set suffixes=.bak,~,.o,.h,.info,.swp,.obj,.class
-
-set statusline=%f\ %y\ %([%R%M]%)%#StatusLineNC#%{&ff=='unix'?'':&ff.'\ format'}%*%{'$'[!&list]}%{'~'[&pm=='']}%=#%n\ %l/%L,%c%V\
-set smartcase
-set listchars=tab:▸▸,trail:<,extends:>,precedes:<,nbsp:%
-set fileencodings=ucs-bom,utf-8,default,latin1
-set dictionary=/usr/share/dict/words
-set completeopt=menu
-set backspace=2
-
-nnoremap <silent> <LocalLeader>sf :CommandT<cr>
-nnoremap <silent> <LocalLeader>E :e! ~/.vimrc<cr>
-vnoremap <LocalLeader>y "+y"<cr>
-nnoremap <LocalLeader>g :Ack <C-R><C-W><cr>
-map <silent> <LocalLeader>vs :call conque_term#open('bash', ['belowright split', 'resize 8'])<cr>
-map <silent> <LocalLeader>vv :call conque_term#open('bash', ['belowright vsplit'])<cr>
-nnoremap <LocalLeader>vh :help<C-R><C-W><cr>
-
-nnoremap <LocalLeader>w :so ~/.vimrc<cr>
-
-inoremap <LocalLeader>, <C-X><C-U>
-
-nnoremap <silent> <LocalLeader>h :JavaHierarchy<cr>
-nnoremap <silent> <LocalLeader>v :Validate<cr>
-nnoremap <silent> <LocalLeader>mg :JavaGetSet<cr>
-nnoremap <silent> <LocalLeader>c :JavaCorrect<cr>
-nnoremap <silent> <LocalLeader>si :ScalaImport<cr>
-nnoremap <silent> <LocalLeader>s :ScalaSearch<cr>
-nnoremap <silent> <LocalLeader>j :JavaSearchContext<cr>
-nnoremap <silent> <LocalLeader>i :JavaImport<cr>
-
-nmap <silent> <LocalLeader>d <Plug>DashSearch
+" open/close all folds
+nmap <LocalLeader>fo :%foldopen!<cr>
+nmap <LocalLeader>fc :%foldclose!<cr>
 nmap <LocalLeader>ff :QuickFixClear<cr>
 nmap <LocalLeader>ss :SignClearAll<cr>
-
-" edit snippets
-map <LocalLeader>ej :sp ~/.vim/bundle/snipmate-snippets/snippets/java.snippets<cr>
-map <LocalLeader>eg :sp ~/.vim/bundle/snipmate-snippets/snippets/_.snippets<cr>
-
 nmap <Tab> :bn<CR>
 nmap <LocalLeader>iv :set list!<CR>
 
-hi Pmenu ctermbg=255 ctermfg=33 gui=bold
-hi SignColumn ctermbg=NONE ctermfg=NONE
+nnoremap <silent> <LocalLeader>sf :CommandT<cr>
+nnoremap <silent> <LocalLeader>E :e! ~/.vimrc<cr>
+nnoremap <LocalLeader>g :Ack <C-R><C-W><cr>
+nnoremap <LocalLeader>vh :help <C-R><C-W><cr>
+
+vnoremap <LocalLeader>y "+y<cr>
+inoremap <LocalLeader>, <C-X><C-U>
+
+" ---------------------------------------------------------------------------
+" Autocmds
 
 " auto remove all trailing white spaces
-autocmd BufWritePre * :%s/\s\+$//e
+if has("autocmd")
+  autocmd BufWritePre * :%s/\s\+$//e
+endif
+
+" auto source vimrc file after saving it
+" if has("autocmd")
+"   autocmd BufWritePost $MYVIMRC source $MYVIMRC
+" endif
+
+
+" ---------------------------------------------------------------------------
+" Plugins Settings
+
+" NERDTree Settings
+nmap <LocalLeader>nn :NERDTreeToggle<cr>
+let NERDChristmasTree=1
+let NERDTreeWinSize=33
+let NERDTreeMinimalUI=0         " toggle off helper
+
+" Tagbar Settings
+nmap <LocalLeader>tt :TagbarToggle<cr>
+let g:tagbar_compact=1
+let g:tagbar_width=33
+
+" AutoCompPop Settings
+inoremap <expr> <cr>       pumvisible() ? "\<c-y>" : "\<cr>"
+
+" MRU Settings
+map <LocalLeader>r :MRU<cr>
+
+" Powerline Settings
+set t_Co=256
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+set encoding=utf-8
 
 " RainBow settings
 au VimEnter * RainbowParenthesesToggle
@@ -247,11 +152,19 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
-" powerline setting
-set nocompatible
-set t_Co=256
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
-set laststatus=2 " Always display the statusline in all windows
-set encoding=utf-8
+" Dash Settings
+nmap <silent> <LocalLeader>d <Plug>DashSearch
+
+" Eclim Settings
+nnoremap <silent> <LocalLeader>h :JavaHierarchy<cr>
+nnoremap <silent> <LocalLeader>v :Validate<cr>
+nnoremap <silent> <LocalLeader>c :JavaCorrect<cr>
+nnoremap <silent> <LocalLeader>s :ScalaSearch<cr>
+nnoremap <silent> <LocalLeader>j :JavaSearchContext<cr>
+nnoremap <silent> <LocalLeader>i :JavaImport<cr>
+nnoremap <silent> <LocalLeader>si :ScalaImport<cr>
+nnoremap <silent> <LocalLeader>mg :JavaGetSet<cr>
+
+" Conque Settings : not installed
+map <silent> <LocalLeader>vs :call conque_term#open('bash', ['belowright split', 'resize 8'])<cr>
+map <silent> <LocalLeader>vv :call conque_term#open('bash', ['belowright vsplit'])<cr>
