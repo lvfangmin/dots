@@ -45,15 +45,15 @@ set visualbell                    " do not beep
 set laststatus=2                  " always display the statusline
 set history=1000                  " remember more commands and search history
 set undolevels=1000               " use many muchos levels of undo
-set completeopt=menu
-set backspace=2
-set wildignore=*.o,*.obj,.git,*.jar,*.class
-set suffixes=.bak,~,.o,.h,.info,.swp,.obj,.class
-set fileencodings=ucs-bom,utf-8,default,latin1
+set backspace=indent,eol,start    " allow backspacing over everything
 
-" more words!
+" Ignore these patterns while expanding wildcards
+set wildignore=*.o,*.obj,.git,*.jar,*.class
+" add more words with local dictionary
 set dictionary=/usr/share/dict/words
+" no beep or flash is wanted
 set vb t_vb=
+
 
 " ---------------------------------------------------------------------------
 " Color Theme
@@ -73,18 +73,19 @@ hi SignColumn ctermbg=NONE ctermfg=NONE
 " symbols to be used as list chars
 set listchars=tab:▸▸,trail:<,extends:>,precedes:<,nbsp:%
 
+
 " ---------------------------------------------------------------------------
 " Shortcuts Keys
 
 " use ; instead of : to eliminate multiple keys being pressed
 map ; :
+" use <space> to scroll down
 map <space> <c-f>
-" easily move between window
+" easily move between windows
 map <C-h> <C-w>h
 map <C-l> <C-w>l
 map <C-j> <C-w>j
 map <C-k> <C-w>k
-
 " this makes the mouse paste a block of text without formatting it
 " (good for code)
 map <MouseMiddle> <esc>"*p
@@ -92,18 +93,23 @@ map <MouseMiddle> <esc>"*p
 " open/close all folds
 nmap <LocalLeader>fo :%foldopen!<cr>
 nmap <LocalLeader>fc :%foldclose!<cr>
+" clear quickfix and sign
 nmap <LocalLeader>ff :QuickFixClear<cr>
 nmap <LocalLeader>ss :SignClearAll<cr>
+" move to next buffer
 nmap <Tab> :bn<CR>
+" show all invisiable chars
 nmap <LocalLeader>iv :set list!<CR>
 
-nnoremap <silent> <LocalLeader>sf :CommandT<cr>
-nnoremap <silent> <LocalLeader>E :e! ~/.vimrc<cr>
-nnoremap <LocalLeader>g :Ack <C-R><C-W><cr>
+" vim helper and edit
 nnoremap <LocalLeader>vh :help <C-R><C-W><cr>
+nnoremap <silent> <LocalLeader>E :e! ~/.vimrc<cr>
 
+" copy to system clipboard
 vnoremap <LocalLeader>y "+y<cr>
+" pop auto complete suggestions
 inoremap <LocalLeader>, <C-X><C-U>
+
 
 " ---------------------------------------------------------------------------
 " Autocmds
@@ -139,6 +145,15 @@ inoremap <expr> <cr>       pumvisible() ? "\<c-y>" : "\<cr>"
 " MRU Settings
 map <LocalLeader>r :MRU<cr>
 
+" Dash Settings
+nmap <silent> <LocalLeader>d <Plug>DashSearch
+
+" CommandT Settings
+nnoremap <silent> <LocalLeader>sf :CommandT<cr>
+
+" ACK Settings
+nnoremap <LocalLeader>g :Ack <C-R><C-W><cr>
+
 " Powerline Settings
 set t_Co=256
 python from powerline.vim import setup as powerline_setup
@@ -148,12 +163,9 @@ set encoding=utf-8
 
 " RainBow settings
 au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
-
-" Dash Settings
-nmap <silent> <LocalLeader>d <Plug>DashSearch
+au Syntax   * RainbowParenthesesLoadRound
+au Syntax   * RainbowParenthesesLoadSquare
+au Syntax   * RainbowParenthesesLoadBraces
 
 " Eclim Settings
 nnoremap <silent> <LocalLeader>h :JavaHierarchy<cr>
