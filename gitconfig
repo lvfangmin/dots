@@ -1,9 +1,9 @@
 [user]
-	name = lvfm
-	email = lvfm@yahoo-inc.com
+	name = lvfangmin
+	email = lvfangmin@gmail.com
 [core]
 	excludesfile = /Users/lvfm/.gitignore_global
-    editor = /usr/local/bin/vim
+    editor = /usr/bin/vim
     ignorecase = false
 [color]
 	ui = auto
