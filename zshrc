@@ -92,7 +92,7 @@ alias .....='cd ../../../..'
 alias aws='ssh -i ~/work/software/aws_instance.pem ec2-user@ec2-54-186-254-248.us-west-2.compute.amazonaws.com'
 
 alias jconsole='jconsole -J-DsocksProxyHost=socks.yahoo.com -J-DsocksProxyPort=1080'
-alias jeclipse='/Users/allenlv/work/eclipse/eclipse &'
+alias jeclipse='nohup /Users/allenlv/work/eclipse/eclipse -vmargs -Xms1024M -Xmx2048M -XX:+UseParallelGC -XX:PermSize=512M -XX:MaxPermSize=1024M &'
 alias ll='ls -l'
 alias me='mvn eclipse:eclipse'
 alias moshup='mosh underquiet.peking.corp.yahoo.com -- screen'
@@ -150,6 +150,10 @@ function drop () {
 	git reset $1
 	git checkout $1
 	echo done
+}
+
+function gco () {
+  git checkout -- $1
 }
 
 function editAt () {
