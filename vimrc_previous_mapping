@@ -1,295 +1,0 @@
-version 6.0
-if &cp | set nocp | endif
-let s:cpo_save=&cpo
-set cpo&vim
-imap <S-Tab> <Plug>snipMateBack
-inoremap <silent> <Plug>XPTrawKey 
-imap <silent> <Plug>XPTfallback <Plug>XPTrawKey
-inoremap <silent> <Plug>snipMateShow =snipMate#ShowAvailableSnips()
-inoremap <silent> <Plug>snipMateBack =snipMate#BackwardsSnippet()
-inoremap <silent> <Plug>snipMateNextOrTrigger =snipMate#TriggerSnippet()
-inoremap <silent> <Plug>delimitMateMRightMouse =delimitMate#Finish(1)<RightMouse>
-inoremap <silent> <Plug>delimitMateMLeftMouse =delimitMate#Finish(1)<LeftMouse>
-inoremap <silent> <Plug>delimitMateDel =delimitMate#Del()
-inoremap <silent> <Plug>delimitMateS-Tab =delimitMate#JumpAny("\<S-Tab>")
-inoremap <silent> <Plug>delimitMateSpace =delimitMate#ExpandSpace()
-inoremap <silent> <Plug>delimitMateCR =delimitMate#ExpandReturn()
-inoremap <silent> <expr> <Plug>delimitMateS-BS delimitMate#WithinEmptyPair() ? "\=delimitMate#Del()\" : "\<S-BS>"
-inoremap <silent> <Plug>delimitMateBS =delimitMate#BS()
-inoremap <silent> <Plug>delimitMate` =delimitMate#QuoteDelim("\`")
-inoremap <silent> <Plug>delimitMate' =delimitMate#QuoteDelim("\'")
-inoremap <silent> <Plug>delimitMate" =delimitMate#QuoteDelim("\"")
-inoremap <silent> <Plug>delimitMate] =delimitMate#JumpOut("\]")
-inoremap <silent> <Plug>delimitMate} =delimitMate#JumpOut("\}")
-inoremap <silent> <Plug>delimitMate) =delimitMate#JumpOut("\)")
-inoremap <silent> <Plug>delimitMate[ [=delimitMate#ParenDelim("]")
-inoremap <silent> <Plug>delimitMate{ {=delimitMate#ParenDelim("}")
-inoremap <silent> <Plug>delimitMate( (=delimitMate#ParenDelim(")")
-map! <D-v> *
-map  h
-xmap 	 <Plug>snipMateVisual
-smap 	 <Plug>snipMateNextOrTrigger
-nnoremap 	 :bn
-map <NL> j
-map  k
-map  l
-nnoremap  :call GotoFile("new")
-nnoremap f :call GotoFile("new")
-snoremap <silent>  `>a=XPTemplateStart(0,{'k':'<C-\++'})
-xnoremap <silent>  "0s=XPTemplatePreWrap(@0)
-vnoremap <silent> 9 :TCommentMaybeInline count=9
-nnoremap <silent> 9 :TComment count=9
-onoremap <silent> 9 :TComment count=9
-vnoremap <silent> 8 :TCommentMaybeInline count=8
-nnoremap <silent> 8 :TComment count=8
-onoremap <silent> 8 :TComment count=8
-vnoremap <silent> 7 :TCommentMaybeInline count=7
-nnoremap <silent> 7 :TComment count=7
-onoremap <silent> 7 :TComment count=7
-vnoremap <silent> 6 :TCommentMaybeInline count=6
-nnoremap <silent> 6 :TComment count=6
-onoremap <silent> 6 :TComment count=6
-vnoremap <silent> 5 :TCommentMaybeInline count=5
-nnoremap <silent> 5 :TComment count=5
-onoremap <silent> 5 :TComment count=5
-vnoremap <silent> 4 :TCommentMaybeInline count=4
-nnoremap <silent> 4 :TComment count=4
-onoremap <silent> 4 :TComment count=4
-vnoremap <silent> 3 :TCommentMaybeInline count=3
-nnoremap <silent> 3 :TComment count=3
-onoremap <silent> 3 :TComment count=3
-vnoremap <silent> 2 :TCommentMaybeInline count=2
-nnoremap <silent> 2 :TComment count=2
-onoremap <silent> 2 :TComment count=2
-vnoremap <silent> 1 :TCommentMaybeInline count=1
-nnoremap <silent> 1 :TComment count=1
-onoremap <silent> 1 :TComment count=1
-noremap ca :call tcomment#SetOption("as", input("Comment as: ", &filetype, "customlist,tcomment#Complete"))
-noremap <silent> cc :call tcomment#SetOption("count", v:count1)
-noremap s :TCommentAs =&ft_
-noremap n :TCommentAs =&ft 
-noremap a :TCommentAs 
-noremap b :TCommentBlock
-noremap <silent> i v:TCommentInline mode=I#
-noremap <silent> r :TCommentRight
-noremap   :TComment 
-noremap <silent> p m`vip:TComment``
-vnoremap <silent>  :TCommentMaybeInline
-nnoremap <silent>  :TComment
-onoremap <silent>  :TComment
-nmap   <PageDown>
-map + +
-vnoremap <silent> ,,w :call EasyMotion#WB(1, 0)
-onoremap <silent> ,,w :call EasyMotion#WB(0, 0)
-nnoremap <silent> ,,w :call EasyMotion#WB(0, 0)
-vnoremap <silent> ,,t :call EasyMotion#T(1, 0)
-onoremap <silent> ,,t :call EasyMotion#T(0, 0)
-nnoremap <silent> ,,t :call EasyMotion#T(0, 0)
-vnoremap <silent> ,,n :call EasyMotion#Search(1, 0)
-onoremap <silent> ,,n :call EasyMotion#Search(0, 0)
-nnoremap <silent> ,,n :call EasyMotion#Search(0, 0)
-vnoremap <silent> ,,k :call EasyMotion#JK(1, 1)
-onoremap <silent> ,,k :call EasyMotion#JK(0, 1)
-nnoremap <silent> ,,k :call EasyMotion#JK(0, 1)
-vnoremap <silent> ,,j :call EasyMotion#JK(1, 0)
-onoremap <silent> ,,j :call EasyMotion#JK(0, 0)
-nnoremap <silent> ,,j :call EasyMotion#JK(0, 0)
-vnoremap <silent> ,,gE :call EasyMotion#EW(1, 1)
-onoremap <silent> ,,gE :call EasyMotion#EW(0, 1)
-nnoremap <silent> ,,gE :call EasyMotion#EW(0, 1)
-vnoremap <silent> ,,f :call EasyMotion#F(1, 0)
-onoremap <silent> ,,f :call EasyMotion#F(0, 0)
-nnoremap <silent> ,,f :call EasyMotion#F(0, 0)
-vnoremap <silent> ,,e :call EasyMotion#E(1, 0)
-onoremap <silent> ,,e :call EasyMotion#E(0, 0)
-nnoremap <silent> ,,e :call EasyMotion#E(0, 0)
-vnoremap <silent> ,,b :call EasyMotion#WB(1, 1)
-onoremap <silent> ,,b :call EasyMotion#WB(0, 1)
-nnoremap <silent> ,,b :call EasyMotion#WB(0, 1)
-vnoremap <silent> ,,W :call EasyMotion#WBW(1, 0)
-onoremap <silent> ,,W :call EasyMotion#WBW(0, 0)
-nnoremap <silent> ,,W :call EasyMotion#WBW(0, 0)
-vnoremap <silent> ,,T :call EasyMotion#T(1, 1)
-onoremap <silent> ,,T :call EasyMotion#T(0, 1)
-nnoremap <silent> ,,T :call EasyMotion#T(0, 1)
-vnoremap <silent> ,,N :call EasyMotion#Search(1, 1)
-onoremap <silent> ,,N :call EasyMotion#Search(0, 1)
-nnoremap <silent> ,,N :call EasyMotion#Search(0, 1)
-vnoremap <silent> ,,ge :call EasyMotion#E(1, 1)
-onoremap <silent> ,,ge :call EasyMotion#E(0, 1)
-nnoremap <silent> ,,ge :call EasyMotion#E(0, 1)
-vnoremap <silent> ,,F :call EasyMotion#F(1, 1)
-onoremap <silent> ,,F :call EasyMotion#F(0, 1)
-nnoremap <silent> ,,F :call EasyMotion#F(0, 1)
-vnoremap <silent> ,,E :call EasyMotion#EW(1, 0)
-onoremap <silent> ,,E :call EasyMotion#EW(0, 0)
-nnoremap <silent> ,,E :call EasyMotion#EW(0, 0)
-vnoremap <silent> ,,B :call EasyMotion#WBW(1, 1)
-onoremap <silent> ,,B :call EasyMotion#WBW(0, 1)
-nnoremap <silent> ,,B :call EasyMotion#WBW(0, 1)
-noremap ,_s :TCommentAs =&ft_
-noremap ,_n :TCommentAs =&ft 
-noremap ,_a :TCommentAs 
-noremap ,_b :TCommentBlock
-noremap <silent> ,_r :TCommentRight
-xnoremap <silent> ,_i :TCommentInline
-noremap ,_  :TComment 
-noremap <silent> ,_p vip:TComment
-xnoremap <silent> ,__ :TCommentMaybeInline
-nnoremap <silent> ,__ :TComment
-snoremap <silent> ,__ :TComment
-onoremap <silent> ,__ :TComment
-nnoremap <silent> ,b :CommandTBuffer
-map ,eg :sp ~/.vim/bundle/snipmate-snippets/snippets/_.snippets
-map ,ej :sp ~/.vim/bundle/snipmate-snippets/snippets/java.snippets
-nmap ,hh H
-nmap ,o F
-nmap <silent> ,d <Plug>DashSearch
-nmap ,ff :QuickFixClear
-nmap ,ss :SignClearAll
-nnoremap <silent> ,h :JavaHierarchy
-nnoremap <silent> ,v :Validate
-nnoremap <silent> ,mg :JavaGetSet
-nnoremap <silent> ,c :JavaCorrect
-nnoremap <silent> ,si :ScalaImport
-nnoremap <silent> ,s :ScalaSearch
-nnoremap <silent> ,j :JavaSearchContext
-nnoremap <silent> ,i :JavaImport
-vmap <silent> ,c :JSHint
-omap <silent> ,c :JSHint
-map <silent> ,vs :call conque_term#open('bash', ['belowright split', 'resize 8'])
-map <silent> ,vv :call conque_term#open('bash', ['belowright vsplit'])
-nnoremap <silent> ,r :MRU
-nnoremap ,vh :help 
-nnoremap ,g :Ack 
-nmap ,lv :lv /=expand("<cword>")/ %:lw
-map ,cc 
-map ,jc :call JCommentWriter()
-vnoremap ,y "+y"
-nmap ,iv :set list!
-nnoremap <silent> ,sc /\v^[<=>]{7}( .*|$)
-nnoremap <silent> ,E :e! ~/.vimrc
-nnoremap <silent> ,sf :CommandT
-map ,tm :tabmove         " move a tab to a new location
-map ,tp :tabprev     " previous tab
-map ,tn :tabnext     " next tab
-map ,td :tabclose    " close a tab
-map ,tc :tabnew %    " create a new tab
-nmap ,tt :TagbarToggle
-nmap ,nn :NERDTreeToggle
-nmap ,fc :%foldclose!
-nmap ,fo :%foldopen!
-map <silent> ,  zfi{
-map - -
-nnoremap ; :
-map <MouseMiddle> "*p
-imap ð :call SearchInvalidComment(1)a
-imap î :call SearchInvalidComment(0)a
-imap ã :call JCommentWriter()
-nmap gx <Plug>NetrwBrowseX
-xnoremap <silent> gC :TCommentMaybeInline!
-nnoremap <silent> gCc :let w:tcommentPos = getpos(".") | set opfunc=tcomment#OperatorLineAnywayg@$
-nnoremap <silent> gC :let w:tcommentPos = getpos(".") | set opfunc=tcomment#OperatorAnywayg@
-xnoremap <silent> gc :TCommentMaybeInline
-nnoremap <silent> gcc :let w:tcommentPos = getpos(".") | set opfunc=tcomment#OperatorLineg@$
-nnoremap <silent> gc9c :let w:tcommentPos = getpos(".") | call tcomment#SetOption("count", 9) | set opfunc=tcomment#Operatorg@
-nnoremap <silent> gc8c :let w:tcommentPos = getpos(".") | call tcomment#SetOption("count", 8) | set opfunc=tcomment#Operatorg@
-nnoremap <silent> gc7c :let w:tcommentPos = getpos(".") | call tcomment#SetOption("count", 7) | set opfunc=tcomment#Operatorg@
-nnoremap <silent> gc6c :let w:tcommentPos = getpos(".") | call tcomment#SetOption("count", 6) | set opfunc=tcomment#Operatorg@
-nnoremap <silent> gc5c :let w:tcommentPos = getpos(".") | call tcomment#SetOption("count", 5) | set opfunc=tcomment#Operatorg@
-nnoremap <silent> gc4c :let w:tcommentPos = getpos(".") | call tcomment#SetOption("count", 4) | set opfunc=tcomment#Operatorg@
-nnoremap <silent> gc3c :let w:tcommentPos = getpos(".") | call tcomment#SetOption("count", 3) | set opfunc=tcomment#Operatorg@
-nnoremap <silent> gc2c :let w:tcommentPos = getpos(".") | call tcomment#SetOption("count", 2) | set opfunc=tcomment#Operatorg@
-nnoremap <silent> gc1c :let w:tcommentPos = getpos(".") | call tcomment#SetOption("count", 1) | set opfunc=tcomment#Operatorg@
-nnoremap <silent> gc :if v:count > 0 | call tcomment#SetOption("count", v:count) | endif | let w:tcommentPos = getpos(".") | set opfunc=tcomment#Operatorg@
-nnoremap gf :call GotoFile("")
-snoremap <Plug>selectToInsert d<BS>
-smap <S-Tab> <Plug>snipMateBack
-nnoremap <silent> <Plug>NetrwBrowseX :call netrw#NetrwBrowseX(expand("<cWORD>"),0)
-xnoremap <silent> <Plug>snipMateVisual s:let g:snipmate_content_visual=getreg('1')
-snoremap <silent> <Plug>snipMateBack a=snipMate#BackwardsSnippet()
-snoremap <silent> <Plug>snipMateNextOrTrigger a=snipMate#TriggerSnippet()
-noremap <SNR>31_DashGlobalSearch :Dash!
-noremap <SNR>31_DashSearch :Dash
-nnoremap <silent> <F11> :call conque_term#exec_file()
-vmap <BS> "-d
-vmap <D-x> "*d
-vmap <D-c> "*y
-vmap <D-v> "-d"*P
-nmap <D-v> "*P
-imap 	 <Plug>snipMateNextOrTrigger
-inoremap <expr>  pumvisible() ? "\" : "\"
-imap 	 <Plug>snipMateShow
-inoremap <silent>  =XPTemplateStart(0,{'k':'<C-r++<C-\++','forcePum':1})
-inoremap <silent>  =XPTemplateStart(0,{'k':'<C-r++<C-r++<C-\++','popupOnly':1})
-imap <silent> OC <Right>
-inoremap <silent>  =XPTemplateStart(0,{'k':'<C-\++'})
-inoremap <silent> 9 :TComment count=9
-inoremap <silent> 8 :TComment count=8
-inoremap <silent> 7 :TComment count=7
-inoremap <silent> 6 :TComment count=6
-inoremap <silent> 5 :TComment count=5
-inoremap <silent> 4 :TComment count=4
-inoremap <silent> 3 :TComment count=3
-inoremap <silent> 2 :TComment count=2
-inoremap <silent> 1 :TComment count=1
-inoremap s :TCommentAs =&ft_
-inoremap n :TCommentAs =&ft 
-inoremap a :TCommentAs 
-inoremap b :TCommentBlock
-inoremap <silent> i v:TCommentInline mode=#
-inoremap <silent> r :TCommentRight
-inoremap   :TComment 
-inoremap <silent> p :norm! m`vip:TComment``
-inoremap <silent>  :TComment
-inoremap ,, 
-imap ;so System.out.println();<Left><Left>
-map ð :call SearchInvalidComment(1)
-map î :call SearchInvalidComment(0)
-map ã :call JCommentWriter()
-cmap w!! %!sudo tee > /dev/null %
-iabbr }- }h%?\w:nohl:call JCommentWriter()
-iabbr idef def initialize
-iabbr rbang #!/usr/bin/env ruby
-let &cpo=s:cpo_save
-unlet s:cpo_save
-set autoindent
-set autoread
-set backspace=2
-set cindent
-set completeopt=menu
-set dictionary=/usr/share/dict/words
-set expandtab
-set fileencodings=ucs-bom,utf-8,default,latin1
-set fillchars=vert:|
-set helplang=en
-set history=1000
-set hlsearch
-set ignorecase
-set incsearch
-set isfname=@,48-57,/,.,-,_,+,,,#,$,%,~,=,:
-set laststatus=2
-set listchars=tab:▸▸,trail:<,extends:>,precedes:<,nbsp:%
-set mouse=a
-set pastetoggle=<F2>
-set ruler
-set rulerformat=%-14.(%l,%c%V%)%=%P%{XPMautoUpdate(\"ruler\")}
-set runtimepath=~/.vim,~/.vim/bundle/Smyck-Color-Scheme,~/.vim/bundle/SnipMgr,~/.vim/bundle/ack.vim,~/.vim/bundle/AutoComplPop,~/.vim/bundle/command-t,~/.vim/bundle/conque,~/.vim/bundle/dash.vim,~/.vim/bundle/delimitMate,~/.vim/bundle/funcoo.vim,~/.vim/bundle/jcommenter.vim,~/.vim/bundle/jshint.vim,~/.vim/bundle/keyboard_cat.vim,~/.vim/bundle/mru.vim,~/.vim/bundle/neocomplcache,~/.vim/bundle/nerdtree,~/.vim/bundle/open_file_under_cursor.vim,~/.vim/bundle/rainbow_parentheses.vim,~/.vim/bundle/snipmate-snippets,~/.vim/bundle/tagbar,~/.vim/bundle/tcomment,~/.vim/bundle/tlib_vim,~/.vim/bundle/vim-addon-mw-utils,~/.vim/bundle/vim-colors-solarized,~/.vim/bundle/vim-easymotion,~/.vim/bundle/vim-golang,~/.vim/bundle/vim-markdown,~/.vim/bundle/vim-monokai,~/.vim/bundle/vim-nodejs-complete,~/.vim/bundle/vim-powerline,~/.vim/bundle/vim-snipmate,~/.vim/bundle/vmark.vim--Visual-Bookmarking,~/.vim/bundle/xptemplate,/usr/local/share/vim/vimfiles,/usr/local/share/vim/vim73,/usr/local/share/vim/vimfiles/after,~/.vim/bundle/vim-markdown/afte
-set scrolloff=3
-set shiftwidth=4
-set showmatch
-set smartcase
-set smartindent
-set softtabstop=4
-set statusline=%f\ %y\ %([%R%M]%)%#StatusLineNC#%{&ff=='unix'?'':&ff.'\ format'}%*%{'$'[!&list]}%{'~'[&pm=='']}%=#%n\ %l/%L,%c%V\ 
-set suffixes=.bak,~,.o,.h,.info,.swp,.obj,.class
-set noswapfile
-set tabstop=4
-set title
-set titlestring=%t%(\ [%R%M]%)
-set viminfo=%100,'100,/100,h,\"500,:100,n~/.viminfo
-set visualbell
-set wildignore=*.o,*.obj,.git,*.jar,*.class
-set wildmenu
-set nowritebackup
-" vim: set ft=vim :
