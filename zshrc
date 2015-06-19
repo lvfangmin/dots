@@ -97,6 +97,10 @@ alias ll='ls -l'
 alias me='mvn eclipse:eclipse'
 alias moshup='mosh underquiet.peking.corp.yahoo.com -- screen'
 
+function exec_on_every_subdir_norecursive() {
+  find . -type d -maxdepth 1 \( ! -name . \) -exec bash -c "$1" \;
+}
+
 function cs() {
 	cd $1; ls;
 }
