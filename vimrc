@@ -42,10 +42,12 @@ set noswapfile                    " do not write annoying intermediate swap file
 set title                         " change the terminal's title
 set pastetoggle=<F2>              " key to paste mode
 set visualbell                    " do not beep
+set noerrorbells
 set laststatus=2                  " always display the statusline
 set history=1000                  " remember more commands and search history
 set undolevels=1000               " use many muchos levels of undo
 set backspace=indent,eol,start    " allow backspacing over everything
+set colorcolumn=80                " show a colored column to avoid too-long line
 
 " Ignore these patterns while expanding wildcards
 set wildignore=*.o,*.obj,.git,*.jar,*.class
