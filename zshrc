@@ -118,16 +118,19 @@ function check () {
 }
 
 function checkdiff () {
-	git diff --stat upstream/master | grep -v -E "ruleset|state|2 \+\-" | awk '{print $1}' | grep -v 528 | xargs git diff upstream/master --
+	git diff --stat upstream/master | grep -v -E "ruleset|state|2 \+\-" \
+    | awk '{print $1}' | grep -v 528 | xargs git diff upstream/master --
 }
 
 function current_branch () {
-	ref=$(git symbolic-ref HEAD 2> /dev/null)  || ref=$(git rev-parse --short HEAD 2> /dev/null)  || return
+	ref=$(git symbolic-ref HEAD 2> /dev/null) \
+    || ref=$(git rev-parse --short HEAD 2> /dev/null)  || return
 	echo ${ref#refs/heads/}
 }
 
 function current_repository () {
-	ref=$(git symbolic-ref HEAD 2> /dev/null)  || ref=$(git rev-parse --short HEAD 2> /dev/null)  || return
+	ref=$(git symbolic-ref HEAD 2> /dev/null)  \
+    || ref=$(git rev-parse --short HEAD 2> /dev/null)  || return
 	echo $(git remote -v | cut -d':' -f 2)
 }
 
@@ -186,7 +189,8 @@ function master_win () {
 	while read file
 	do
 		echo "revert changes of $file"
-		git reset -q -- $file > /dev/null && git checkout -- $file && git checkout upstream/master -- $file
+		git reset -q -- $file > /dev/null && git checkout -- $file \
+      && git checkout upstream/master -- $file
 	done <<< "$files"
 }
 
@@ -199,7 +203,8 @@ function merge_steps () {
 	git checkout -- assembly/**/image/rule.{ruleset,state}
 	git status --short | grep -e "^UA" | cut -d ' ' -f 2 | xargs -n 1 git add
 	git status --short | grep -e "^AU" | cut -d ' ' -f 2 | xargs -n 1 git add
-	find . -type f \( -name '*yi?f' -o -name '*bim' -o -name 'Make*' \) -print0 | xargs -0 -P128 grep -EH --color master
+	find . -type f \( -name '*yi?f' -o -name '*bim' -o -name 'Make*' \) -print0 \
+    | xargs -0 -P128 grep -EH --color master
 	git diff --stat $MERGE_POINT | grep -v -E "ruleset|state|2 \+\-"
 	git commit
 	tag_release
@@ -212,11 +217,15 @@ function mkdircd () {
 }
 
 function mp () {
-	mvn -s ~/work/shell/ymaven_settings.xml archetype:create -DgroupId=$1 -DartifactId=$2
+	mvn -s ~/work/shell/ymaven_settings.xml archetype:create \
+    -DgroupId=$1 -DartifactId=$2
 }
 
 function msp () {
-	mvn -s ~/work/shell/ymaven_settings.xml archetype:generate -DgroupId=$1 -DartifactId=$2 -DremoteRepositories=http://scala-tools.org/repo-releases -DarchetypeGroupId=org.scala-tools.archetypes -DarchetypeArtifactId=scala-archetype-simple -Dversion=1.0-SNAPSHOT
+	mvn -s ~/work/shell/ymaven_settings.xml archetype:generate -DgroupId=$1 \
+    -DartifactId=$2 -DremoteRepositories=http://scala-tools.org/repo-releases \
+    -DarchetypeGroupId=org.scala-tools.archetypes \
+    -DarchetypeArtifactId=scala-archetype-simple -Dversion=1.0-SNAPSHOT
 }
 
 function newsbt () {
