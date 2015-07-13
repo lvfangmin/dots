@@ -48,10 +48,10 @@ pushd . && cd /tmp
 # download and install tagbar's prerequest ctags
 CTAGS_URL=http://ncu.dl.sourceforge.net/project/ctags/ctags/5.8/ctags-5.8.tar.gz
 curl -LSso ctags.tar.gz $CTAGS_URL \
-  && tar -zxvf ctags.tar.gz && cd ctags && ./configure && make \
+  && tar -zxvf ctags.tar.gz && cd ctags-* && ./configure && make \
   && sudo make install
 # clean up
-cd .. && rm -rf ctags && rm ctags.tar.gz
+cd .. && rm -rf ctags-* && rm ctags.tar.gz
 popd
 
 # init power line
