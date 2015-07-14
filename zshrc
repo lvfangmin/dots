@@ -95,7 +95,7 @@ alias jconsole='jconsole -J-DsocksProxyHost=socks.yahoo.com -J-DsocksProxyPort=1
 alias jeclipse='nohup /Users/allenlv/work/eclipse/eclipse -vmargs -Xms1024M -Xmx2048M -XX:+UseParallelGC -XX:PermSize=512M -XX:MaxPermSize=1024M &'
 alias ll='ls -l'
 alias me='mvn eclipse:eclipse'
-alias moshup='mosh underquiet.peking.corp.yahoo.com -- screen'
+alias moshup='mosh dev895.lla1.facebook.com -- screen'
 
 function exec_on_every_subdir_norecursive() {
   find . -type d -maxdepth 1 \( ! -name . \) -exec bash -c "$1" \;
