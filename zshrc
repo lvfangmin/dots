@@ -51,6 +51,8 @@ plugins=(git)
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home
+# solve tmux vim solarize color issue
+export TERM=screen-256color
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
