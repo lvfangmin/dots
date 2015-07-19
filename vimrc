@@ -66,8 +66,6 @@ set background=dark
 colorscheme solarized
 let g:solarized_termcolors=256
 
-" set cursor line color
-hi CursorLine cterm=none ctermbg=none ctermfg=blue
 " set menu color
 hi Pmenu ctermbg=255 ctermfg=33 gui=bold
 " set sign column color
