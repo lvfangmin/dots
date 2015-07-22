@@ -52,7 +52,7 @@ plugins=(git)
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home
 # solve tmux vim solarize color issue
-export TERM=screen-256color
+export TERM=xterm-256color
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -85,6 +85,7 @@ alias .ev="vim ~/.vimrc"
 alias .ez="vim ~/.zshrc"
 alias .es='vim ~/.oh-my-zsh/custom/shortcuts.zsh'
 alias .ss='source ~/.zshrc'
+alias .st='tmux source ~/.tmux.conf'
 
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -97,7 +98,8 @@ alias jconsole='jconsole -J-DsocksProxyHost=socks.yahoo.com -J-DsocksProxyPort=1
 alias jeclipse='nohup /Users/allenlv/work/eclipse/eclipse -vmargs -Xms1024M -Xmx2048M -XX:+UseParallelGC -XX:PermSize=512M -XX:MaxPermSize=1024M &'
 alias ll='ls -l'
 alias me='mvn eclipse:eclipse'
-alias moshup='mosh dev895.lla1.facebook.com -- screen'
+alias moshup='mosh dev895.lla1.facebook.com -- tmux'
+alias guard='guard start -i'
 
 function exec_on_every_subdir_norecursive() {
   find . -type d -maxdepth 1 \( ! -name . \) -exec bash -c "$1" \;

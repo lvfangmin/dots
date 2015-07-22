@@ -39,7 +39,7 @@ popd
 # init command-t
 if [ -e $VIM/bundle/command-t/ruby/command-t ]; then
   pushd . && cd $VIM/bundle/command-t/ruby/command-t
-  ruby extconf.rb && make && make install
+    ruby extconf.rb && make && make install
   popd
 fi
 
