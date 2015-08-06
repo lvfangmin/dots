@@ -49,7 +49,7 @@ plugins=(git)
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:~/.linuxbrew/bin:/mnt/vol/engshare/admin/scripts:/mnt/vol/engshare/svnroot/tfb/trunk/www/scripts/bin:/opt/local/ruby-1.8.7/bin:$PATH
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home
 # solve tmux vim solarize color issue
 export TERM=xterm-256color
@@ -100,6 +100,12 @@ alias ll='ls -l'
 alias me='mvn eclipse:eclipse'
 alias moshup='mosh dev895.lla1.facebook.com -- tmux'
 alias guard='guard start -i'
+alias hg_cleanup='hg revert --all && hg purge'
+alias tmux_ks='tmux ls | grep -v attached | cut -d: -f1 | xargs -n 1 tmux kill-session -t'
+
+function tester_srt() {
+  ./tester $1 2015-07-25
+}
 
 function exec_on_every_subdir_norecursive() {
   find . -type d -maxdepth 1 \( ! -name . \) -exec bash -c "$1" \;

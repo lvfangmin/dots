@@ -13,7 +13,7 @@ syntax on                         " set the syntax on
 " ---------------------------------------------------------------------------
 " General Settings
 set ttyfast                       " always with a fast terminal
-set number                        " show the line number before each line
+" set number                      " show the line number before each line
 set autoindent                    " auto indent when start a new line
 set autoread                      " auto reload files changed outside vim
 set smartindent                   " c like smart indent
@@ -70,6 +70,11 @@ let g:solarized_termcolors=256
 hi Pmenu ctermbg=255 ctermfg=33 gui=bold
 " set sign column color
 hi SignColumn ctermbg=NONE ctermfg=NONE
+
+" change the vertical split boarder color and char
+hi VertSplit ctermbg=NONE ctermfg=NONE
+set fillchars+=vert:\|
+
 " symbols to be used as list chars
 set listchars=tab:▸▸,trail:<,extends:>,precedes:<,nbsp:%
 
@@ -89,6 +94,16 @@ map <C-k> <C-w>k
 " this makes the mouse paste a block of text without formatting it
 " (good for code)
 map <MouseMiddle> <esc>"*p
+
+function! SwitchSourceHeader()
+  if (expand ("%:e") == "cpp")
+    find %:t:r.h
+  else
+    find %:t:r.cpp
+  endif
+endfunction
+
+nmap <LocalLeader>s :call SwitchSourceHeader()<CR>
 
 " open/close all folds
 nmap <LocalLeader>fo :%foldopen!<cr>
@@ -149,17 +164,24 @@ map <LocalLeader>r :MRU<cr>
 nmap <silent> <LocalLeader>d <Plug>DashSearch
 
 " CommandT Settings
-nnoremap <silent> <LocalLeader>sf :CommandT<cr>
+let g:CommandTTraverseSCM = 'pwd'
+let g:CommandTMaxFiles=50000
+let g:CommandTMaxHeight=16
+nnoremap <silent> <LocalLeader>sf :CommandT <C-R><C-W><cr>
 
 " ACK Settings
 nnoremap <LocalLeader>g :Ack <C-R><C-W><cr>
 
 " Powerline Settings
-set t_Co=256
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
 set encoding=utf-8
+set t_Co=256
+" python from powerline.vim import setup as powerline_setup
+" python powerline_setup()
+" python del powerline_setup
+
+" airline Settings
+let g:airline_powerline_fonts=1
+let g:airline_theme='powerlineish'
 
 " RainBow settings
 au VimEnter * RainbowParenthesesToggle
@@ -171,7 +193,9 @@ au Syntax   * RainbowParenthesesLoadBraces
 nnoremap <silent> <LocalLeader>h :JavaHierarchy<cr>
 nnoremap <silent> <LocalLeader>v :Validate<cr>
 nnoremap <silent> <LocalLeader>c :JavaCorrect<cr>
-nnoremap <silent> <LocalLeader>s :ScalaSearch<cr>
+" comment as we don't need it on dev server
+" will map it to a more useful command
+" nnoremap <silent> <LocalLeader>s :ScalaSearch<cr>
 nnoremap <silent> <LocalLeader>j :JavaSearchContext<cr>
 nnoremap <silent> <LocalLeader>i :JavaImport<cr>
 nnoremap <silent> <LocalLeader>si :ScalaImport<cr>
