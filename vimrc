@@ -105,11 +105,14 @@ nmap <LocalLeader>iv :set list!<CR>
 nnoremap <LocalLeader>vh :help <C-R><C-W><cr>
 nnoremap <silent> <LocalLeader>E :e! ~/.vimrc<cr>
 
+" used to zoom and return to the well-tuned splits
+nnoremap <LocalLeader>z :tab sp<cr>
+map <LocalLeader>q <C-w>c
+
 " copy to system clipboard
 vnoremap <LocalLeader>y "+y<cr>
 " pop auto complete suggestions
 inoremap <LocalLeader>, <C-X><C-U>
-
 
 " ---------------------------------------------------------------------------
 " Autocmds
@@ -149,7 +152,8 @@ map <LocalLeader>r :MRU<cr>
 nmap <silent> <LocalLeader>d <Plug>DashSearch
 
 " CommandT Settings
-nnoremap <silent> <LocalLeader>sf :CommandT<cr>
+nnoremap <silent> <LocalLeader>sf :CommandT <C-R><C-W><cr>
+let g:CommandTMaxHeight=16
 
 " ACK Settings
 nnoremap <LocalLeader>g :Ack <C-R><C-W><cr>

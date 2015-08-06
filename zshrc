@@ -49,11 +49,12 @@ plugins=(git)
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home
+export PATH=$HOME/bin:/usr/local/bin:$PATH:~/.npm-packages/lib/node_modules/grunt-cli/bin/:~/.npm-packages/lib/node_modules/grunt-init/bin/grunt-init:/Users/allenlyu/.npm-packages/lib/node_modules/sinopia/bin:/Users/allenlyu/Library/Android/sdk/platform-tools
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home
 # solve tmux vim solarize color issue
 export TERM=xterm-256color
 # export MANPATH="/usr/local/man:$MANPATH"
+export ANDROID_HOME=/Users/allenlyu/Library/Android/sdk
 
 source $ZSH/oh-my-zsh.sh
 
@@ -91,18 +92,27 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
+alias buck=/Users/allenlyu/Work/Facebook/buck/bin/buck
 
 alias aws='ssh -i ~/work/software/aws_instance.pem ec2-user@ec2-54-186-254-248.us-west-2.compute.amazonaws.com'
 
 alias jconsole='jconsole -J-DsocksProxyHost=socks.yahoo.com -J-DsocksProxyPort=1080'
-alias jeclipse='nohup /Users/allenlv/work/eclipse/eclipse -vmargs -Xms1024M -Xmx2048M -XX:+UseParallelGC -XX:PermSize=512M -XX:MaxPermSize=1024M &'
+alias jeclipse='nohup /Users/allenlyu/Work/eclipse/eclipse -vmargs -Xms1024M -Xmx2048M -XX:+UseParallelGC -XX:PermSize=512M -XX:MaxPermSize=1024M &'
 alias ll='ls -l'
 alias me='mvn eclipse:eclipse'
-alias moshup='mosh dev895.lla1.facebook.com -- tmux'
+alias moshup='mosh devvm28858.prn1.facebook.com -- tmux'
 alias guard='guard start -i'
+alias db_pwd='~/Work/Facebook/core482.sh'
+alias to_bizgw='ssh bizgw001.ash1.facebook.com'
 
 function exec_on_every_subdir_norecursive() {
   find . -type d -maxdepth 1 \( ! -name . \) -exec bash -c "$1" \;
+}
+
+function list_colors() {
+  for i in {0..255} ; do
+      printf "\x1b[38;5;${i}mcolour${i}\n"
+  done
 }
 
 function cs() {
@@ -266,6 +276,26 @@ function tag_release () {
 function take () {
 	mkdir -p $1
 	cd $1
+}
+
+function anb() {
+  arc feature $1 instream_video;
+}
+
+function aland() {
+  branch_name=$(git symbolic-ref --short HEAD)
+  arc amend; # get the summary data
+  git checkout instream_video; # switch to instream_video branch
+  git pull . $branch_name; git push; # merge the change and push to remote
+  git branch -D $branch_name; # delete the branch
+}
+
+function adiff() {
+  arc diff --preview instream_video;
+}
+
+function clean_local_changes() {
+  git reset --hard; git clean -df;
 }
 
 function tarz () {

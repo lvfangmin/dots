@@ -1,6 +1,6 @@
 [user]
-	name = lvfangmin
-	email = lvfangmin@gmail.com
+  name = Fangmin Lyu
+	email = allenlyu@fb.com
 [core]
 	excludesfile = /Users/lvfm/.gitignore_global
     editor = /usr/bin/vim
@@ -27,3 +27,7 @@
     fp = format-patch --signoff
     lf = fsck --lost-found
     upstream =  branch --set-upstream
+[http]
+    # proxy = fwdproxy.any:8080
+[credential]
+	helper = osxkeychain
