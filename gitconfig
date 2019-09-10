@@ -1,33 +1,34 @@
 [user]
   name = Fangmin Lyu
-	email = allenlyu@fb.com
+	email = fangmin@apache.org
 [core]
 	excludesfile = /Users/lvfm/.gitignore_global
-    editor = /usr/bin/vim
-    ignorecase = false
+  editor = /usr/bin/vim
+  ignorecase = false
+  whitespace = -trailing-space,-indent-with-non-tab,-tab-in-indent
 [color]
 	ui = auto
 [alias]
-    co = checkout
-    ci = commit
+  co = checkout
+  ci = commit
 	st = status
 	ba = branch -a
-    unstage = reset HEAD
-    uncommit = reset --soft HEAD^
-    lgt = log --date=short --graph --pretty=format:'%C(magenta)%h%Creset -%C(yellow)%d%Creset%C(cyan) %s %Cgreen(%cd) %C(blue)<%an>%Creset' --abbrev-commit --all
-    lg = log --date=short --graph --pretty=format:'%C(magenta)%h%Creset -%C(yellow)%d%Creset%C(cyan) %s %Cgreen(%cd) %C(blue)<%an>%Creset' --abbrev-commit
-    amend = commit --amend
-    g = grep -n --color -E
-    cp = cherry-pick
-    nb = checkout -b
-    lu = ls-files -o --exclude-standard
+  unstage = reset HEAD
+  uncommit = reset --soft HEAD^
+  lgt = log --date=short --graph --pretty=format:'%C(magenta)%h%Creset -%C(yellow)%d%Creset%C(cyan) %s %Cgreen(%cd) %C(blue)<%an>%Creset' --abbrev-commit --all
+  lg = log --date=short --graph --pretty=format:'%C(magenta)%h%Creset -%C(yellow)%d%Creset%C(cyan) %s %Cgreen(%cd) %C(blue)<%an>%Creset' --abbrev-commit
+  amend = commit --amend
+  g = grep -n --color -E
+  cp = cherry-pick
+  nb = checkout -b
+  lu = ls-files -o --exclude-standard
 	au = !git add $(git ls-files -o --exclude-standard)
-    mt = mergetool --tool=vimdiff
-    cat = cat-file -p
-    fp = format-patch --signoff
-    lf = fsck --lost-found
-    upstream =  branch --set-upstream
+  mt = mergetool --tool=vimdiff
+  cat = cat-file -p
+  fp = format-patch --signoff
+  lf = fsck --lost-found
+  upstream =  branch --set-upstream
 [http]
-    # proxy = fwdproxy.any:8080
+  # proxy = fwdproxy.any:8080
 [credential]
 	helper = osxkeychain

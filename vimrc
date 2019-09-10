@@ -118,9 +118,9 @@ inoremap <LocalLeader>, <C-X><C-U>
 " Autocmds
 
 " auto remove all trailing white spaces
-if has("autocmd")
-  autocmd BufWritePre * :%s/\s\+$//e
-endif
+"if has("autocmd")
+"  autocmd BufWritePre * :%s/\s\+$//e
+"endif
 
 " auto source vimrc file after saving it
 " if has("autocmd")

@@ -50,11 +50,14 @@ plugins=(git)
 # User configuration
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH:~/.npm-packages/lib/node_modules/grunt-cli/bin/:~/.npm-packages/lib/node_modules/grunt-init/bin/grunt-init:/Users/allenlyu/.npm-packages/lib/node_modules/sinopia/bin:/Users/allenlyu/Library/Android/sdk/platform-tools
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home
 # solve tmux vim solarize color issue
 export TERM=xterm-256color
 # export MANPATH="/usr/local/man:$MANPATH"
 export ANDROID_HOME=/Users/allenlyu/Library/Android/sdk
+export JIRA_USERNAME=lvfangmin
+export JIRA_PASSWORD=1987121LFm_
+export PATH="$HOME/.cargo/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -101,9 +104,13 @@ alias jeclipse='nohup /Users/allenlyu/Work/eclipse/eclipse -vmargs -Xms1024M -Xm
 alias ll='ls -l'
 alias me='mvn eclipse:eclipse'
 alias moshup='mosh devvm28858.prn1.facebook.com -- tmux'
+alias moshup_new='mosh devvm373.frc2.facebook.com -- tmux'
 alias guard='guard start -i'
 alias db_pwd='~/Work/Facebook/core482.sh'
-alias to_bizgw='ssh bizgw001.ash1.facebook.com'
+alias to_bizgw='ssh bizgw002.frc1.facebook.com'
+alias to_secure='for ssh -t -A bizgw001.prn1 ssh -t -A secureshellserver001.prn1'
+alias remote_eclipse='xpra attach --dpi=156 ssh:devvm373.frc2.facebook.com'
+alias findbugs='ant -Dfindbugs.home=/Users/allenlyu/Downloads/findbugs-3.0.1 findbugs'
 
 function exec_on_every_subdir_norecursive() {
   find . -type d -maxdepth 1 \( ! -name . \) -exec bash -c "$1" \;
@@ -301,3 +308,10 @@ function clean_local_changes() {
 function tarz () {
 	tar -zcvf $1 $2
 }
+
+function get_patch_from_dev() {
+    scp devvm28858.prn1.facebook.com:/data/users/allenlyu/zookeeper/$1 .
+}
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
